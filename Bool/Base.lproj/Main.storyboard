@@ -1,0 +1,656 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Bool" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R3h-gS-k2c">
+                                <rect key="frame" x="39.333333333333343" y="119" width="314.33333333333326" height="106.66666666666669"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Учебный">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="28" name="Copperplate"/>
+                                            <font key="NSOriginalFont" size="17" name="Didot"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="28" name="Copperplate"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="тренажер">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="28" name="Copperplate"/>
+                                            <font key="NSOriginalFont" size="17" name="Didot"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="28" name="Copperplate"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="по">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="28" name="Copperplate"/>
+                                            <font key="NSOriginalFont" size="17" name="Didot"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="28" name="Copperplate"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="булевым">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="28" name="Copperplate"/>
+                                            <font key="NSOriginalFont" size="17" name="Didot"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="28" name="Copperplate"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="функциям">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="28" name="Copperplate"/>
+                                            <font key="NSOriginalFont" size="17" name="Didot"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <color key="highlightedColor" systemColor="tintColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="TFz-tB-gLh">
+                                <rect key="frame" x="94" y="646" width="205" height="32"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <segments>
+                                    <segment title="1"/>
+                                    <segment title="2"/>
+                                    <segment title="3"/>
+                                </segments>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fkF-c5-dA0">
+                                <rect key="frame" x="146" y="619" width="101" height="19"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Сложность">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="18" name="Copperplate"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nev-4y-Ei2">
+                                <rect key="frame" x="103" y="343" width="187" height="51"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Теория">
+                                    <fontDescription key="titleFontDescription" name="Copperplate" family="Copperplate" pointSize="36"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="gzd-1D-POp" kind="presentation" identifier="showTheory" modalPresentationStyle="fullScreen" id="UNA-Kr-JwD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E2t-CF-gpV">
+                                <rect key="frame" x="102.99999999999999" y="462" width="177.66666666666663" height="50"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Начать">
+                                    <fontDescription key="titleFontDescription" name="Copperplate" family="Copperplate" pointSize="36"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="nmn-1A-l6D" kind="presentation" identifier="showTrainer" modalPresentationStyle="fullScreen" id="l7C-iF-VuJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="R3h-gS-k2c" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.8" id="2UE-h0-Q1Z"/>
+                            <constraint firstItem="R3h-gS-k2c" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3g4-LS-Fmw"/>
+                            <constraint firstItem="TFz-tB-gLh" firstAttribute="top" secondItem="fkF-c5-dA0" secondAttribute="bottom" constant="8" id="93N-1o-GVr"/>
+                            <constraint firstItem="E2t-CF-gpV" firstAttribute="top" secondItem="nev-4y-Ei2" secondAttribute="bottom" constant="68" id="D8P-D5-8LZ"/>
+                            <constraint firstItem="R3h-gS-k2c" firstAttribute="centerX" secondItem="fkF-c5-dA0" secondAttribute="centerX" id="DBd-Ic-JFq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="TFz-tB-gLh" secondAttribute="bottom" constant="141" id="HIR-iS-lhV"/>
+                            <constraint firstItem="R3h-gS-k2c" firstAttribute="centerX" secondItem="E2t-CF-gpV" secondAttribute="centerX" constant="4.6666666666666572" id="NaS-Kk-zFb"/>
+                            <constraint firstItem="TFz-tB-gLh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="94" id="ShQ-2a-kyw"/>
+                            <constraint firstItem="R3h-gS-k2c" firstAttribute="centerX" secondItem="nev-4y-Ei2" secondAttribute="centerX" id="TOs-TI-vCJ"/>
+                            <constraint firstAttribute="bottom" secondItem="E2t-CF-gpV" secondAttribute="bottom" constant="340" id="bZ5-hZ-Oht"/>
+                            <constraint firstItem="E2t-CF-gpV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="103" id="jFy-QG-WlZ"/>
+                            <constraint firstItem="R3h-gS-k2c" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="jy8-F3-vjF"/>
+                            <constraint firstItem="R3h-gS-k2c" firstAttribute="centerX" secondItem="TFz-tB-gLh" secondAttribute="centerX" id="kgI-YD-3nd"/>
+                            <constraint firstItem="E2t-CF-gpV" firstAttribute="leading" secondItem="nev-4y-Ei2" secondAttribute="leading" id="pzJ-qP-6ml"/>
+                            <constraint firstItem="R3h-gS-k2c" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.09" constant="29.920000000000002" id="wzx-NZ-MCd"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="difficultySegmentedControl" destination="TFz-tB-gLh" id="1tN-kZ-jPR"/>
+                        <outlet property="startButton" destination="E2t-CF-gpV" id="FfC-lH-Ne2"/>
+                        <outlet property="theoryButton" destination="nev-4y-Ei2" id="wIZ-hR-imT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-170.40000000000001" y="8.1280788177339911"/>
+        </scene>
+        <!--Theory View Controller-->
+        <scene sceneID="oaI-Cg-14e">
+            <objects>
+                <viewController id="gzd-1D-POp" customClass="TheoryViewController" customModule="Bool" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZQu-2R-YYb">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gd6-n2-kWP">
+                                <rect key="frame" x="108" y="740" width="177" height="51"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Выйти">
+                                    <fontDescription key="titleFontDescription" name="Copperplate" family="Copperplate" pointSize="36"/>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="exitButtonTapped:" destination="gzd-1D-POp" eventType="touchUpInside" id="xox-sR-lca"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Теория" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="znE-E7-X9q">
+                                <rect key="frame" x="46" y="91" width="301" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="8y1-T1-jfR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="36"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="..." textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="4FN-t1-6xI">
+                                <rect key="frame" x="46" y="165" width="316" height="522"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="26"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="JqQ-N1-Gck"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="gd6-n2-kWP" firstAttribute="leading" secondItem="JqQ-N1-Gck" secondAttribute="leading" constant="107.99999999999999" id="FwW-Ds-CJe"/>
+                            <constraint firstItem="znE-E7-X9q" firstAttribute="top" secondItem="JqQ-N1-Gck" secondAttribute="top" constant="91" id="TRd-g8-bs6"/>
+                            <constraint firstItem="gd6-n2-kWP" firstAttribute="top" secondItem="4FN-t1-6xI" secondAttribute="bottom" constant="53" id="W9n-Yf-S7f"/>
+                            <constraint firstItem="4FN-t1-6xI" firstAttribute="top" secondItem="znE-E7-X9q" secondAttribute="bottom" constant="53" id="aOP-P9-gsA"/>
+                            <constraint firstItem="znE-E7-X9q" firstAttribute="leading" relation="lessThanOrEqual" secondItem="JqQ-N1-Gck" secondAttribute="leading" constant="46" id="fjd-ub-yWh"/>
+                            <constraint firstItem="JqQ-N1-Gck" firstAttribute="bottom" secondItem="gd6-n2-kWP" secondAttribute="bottom" constant="61" id="g5f-T9-oPo"/>
+                            <constraint firstItem="znE-E7-X9q" firstAttribute="centerX" secondItem="gd6-n2-kWP" secondAttribute="centerX" id="pSj-Kf-DHB"/>
+                            <constraint firstItem="znE-E7-X9q" firstAttribute="centerX" secondItem="ZQu-2R-YYb" secondAttribute="centerX" id="piT-9f-WXW"/>
+                            <constraint firstItem="znE-E7-X9q" firstAttribute="leading" secondItem="4FN-t1-6xI" secondAttribute="leading" id="roh-Ob-iMl"/>
+                            <constraint firstItem="JqQ-N1-Gck" firstAttribute="trailing" secondItem="4FN-t1-6xI" secondAttribute="trailing" constant="31" id="wUc-Sq-mlG"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="exitButton" destination="gd6-n2-kWP" id="rJ5-RG-oEg"/>
+                        <outlet property="theoryTextView" destination="4FN-t1-6xI" id="qki-LI-DLE"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zmt-dM-UMY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="804" y="-315"/>
+        </scene>
+        <!--Trainer View Controller-->
+        <scene sceneID="X1Y-3t-Zch">
+            <objects>
+                <viewController id="nmn-1A-l6D" customClass="TrainerViewController" customModule="Bool" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oaz-gn-xv7">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qCq-HI-meK">
+                                <rect key="frame" x="23" y="79" width="347" height="37"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Тренажер">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="36" name="Copperplate"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9JH-D5-tsz">
+                                <rect key="frame" x="23" y="124" width="347" height="25"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="вопрос 1 из 5">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="24" name="Copperplate"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="atb-x8-uWe">
+                                <rect key="frame" x="20" y="157" width="347" height="25"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="сложность: легкий">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="24" name="Copperplate"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zbA-kr-kke">
+                                <rect key="frame" x="25" y="208" width="349" height="141"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="141" id="AWa-20-n4N"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="Вопрос">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="18" name="Copperplate"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="ZPH-gq-otb">
+                                <rect key="frame" x="23" y="386" width="343.66666666666669" height="244"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <color key="sectionIndexColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="sectionIndexBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OB6-es-lbJ">
+                                <rect key="frame" x="131" y="762" width="131" height="33"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Выйти">
+                                            <attributes>
+                                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="18" name="Copperplate"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="exitButtonTapped:" destination="nmn-1A-l6D" eventType="touchUpInside" id="K4W-Zs-KpD"/>
+                                    <segue destination="oGI-5j-0TN" kind="presentation" identifier="showResult" modalPresentationStyle="fullScreen" id="Gox-ak-XzW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Bf-Uq-UvJ">
+                                <rect key="frame" x="130" y="680" width="133" height="33"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Ответить">
+                                            <attributes>
+                                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="18" name="Copperplate"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="actionButtonTapped:" destination="nmn-1A-l6D" eventType="touchUpInside" id="1Ts-JJ-fnY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ihh-2b-13f">
+                                <rect key="frame" x="130" y="721" width="133" height="33"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Завершить">
+                                            <attributes>
+                                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="18" name="Copperplate"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="finalButtonTapped:" destination="nmn-1A-l6D" eventType="touchUpInside" id="bPY-gE-sC8"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Ccs-Rm-td3"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="OB6-es-lbJ" firstAttribute="top" secondItem="Ihh-2b-13f" secondAttribute="bottom" constant="8" id="3eH-9z-U4c"/>
+                            <constraint firstItem="8Bf-Uq-UvJ" firstAttribute="leading" secondItem="Ihh-2b-13f" secondAttribute="leading" id="A3m-pn-cBR"/>
+                            <constraint firstItem="qCq-HI-meK" firstAttribute="leading" secondItem="Ccs-Rm-td3" secondAttribute="leading" constant="23" id="A4e-MG-vmA"/>
+                            <constraint firstItem="Ccs-Rm-td3" firstAttribute="bottom" secondItem="OB6-es-lbJ" secondAttribute="bottom" constant="57" id="B2y-ZM-Y4W"/>
+                            <constraint firstItem="Ccs-Rm-td3" firstAttribute="trailing" secondItem="atb-x8-uWe" secondAttribute="trailing" constant="26" id="C0B-HV-M7z"/>
+                            <constraint firstItem="qCq-HI-meK" firstAttribute="centerX" secondItem="Ihh-2b-13f" secondAttribute="centerX" id="EX2-aC-Ldf"/>
+                            <constraint firstItem="zbA-kr-kke" firstAttribute="leading" secondItem="Ccs-Rm-td3" secondAttribute="leading" constant="25" id="I15-3u-BUh"/>
+                            <constraint firstItem="zbA-kr-kke" firstAttribute="top" secondItem="oaz-gn-xv7" secondAttribute="top" constant="208" id="Jcp-92-3mC"/>
+                            <constraint firstItem="9JH-D5-tsz" firstAttribute="top" secondItem="qCq-HI-meK" secondAttribute="bottom" constant="8" id="LTM-QS-iAA"/>
+                            <constraint firstItem="qCq-HI-meK" firstAttribute="leading" secondItem="ZPH-gq-otb" secondAttribute="leading" id="OLc-5u-P4w"/>
+                            <constraint firstItem="Ccs-Rm-td3" firstAttribute="trailing" secondItem="9JH-D5-tsz" secondAttribute="trailing" constant="23" id="Q2L-lZ-pSm"/>
+                            <constraint firstItem="OB6-es-lbJ" firstAttribute="leading" secondItem="Ccs-Rm-td3" secondAttribute="leading" constant="131" id="Rtt-la-McX"/>
+                            <constraint firstItem="ZPH-gq-otb" firstAttribute="top" secondItem="zbA-kr-kke" secondAttribute="bottom" constant="37" id="Uez-tX-ZR2"/>
+                            <constraint firstItem="qCq-HI-meK" firstAttribute="centerX" secondItem="8Bf-Uq-UvJ" secondAttribute="centerX" id="a1o-hZ-Lmq"/>
+                            <constraint firstItem="qCq-HI-meK" firstAttribute="centerX" secondItem="oaz-gn-xv7" secondAttribute="centerX" id="aVN-bt-HtP"/>
+                            <constraint firstItem="8Bf-Uq-UvJ" firstAttribute="top" secondItem="ZPH-gq-otb" secondAttribute="bottom" constant="50" id="bIq-7e-NaI"/>
+                            <constraint firstItem="8Bf-Uq-UvJ" firstAttribute="leading" secondItem="Ccs-Rm-td3" secondAttribute="leading" constant="130" id="bi1-v4-yUd"/>
+                            <constraint firstItem="zbA-kr-kke" firstAttribute="top" secondItem="atb-x8-uWe" secondAttribute="bottom" constant="26" id="fI6-T1-ETr"/>
+                            <constraint firstItem="9JH-D5-tsz" firstAttribute="leading" relation="lessThanOrEqual" secondItem="Ccs-Rm-td3" secondAttribute="leading" constant="23" id="fnV-2b-P73"/>
+                            <constraint firstItem="Ccs-Rm-td3" firstAttribute="trailing" secondItem="zbA-kr-kke" secondAttribute="trailing" constant="19" id="jlr-UH-mEg"/>
+                            <constraint firstItem="atb-x8-uWe" firstAttribute="leading" relation="lessThanOrEqual" secondItem="Ccs-Rm-td3" secondAttribute="leading" constant="20" id="kWt-Se-uFG"/>
+                            <constraint firstItem="atb-x8-uWe" firstAttribute="top" secondItem="9JH-D5-tsz" secondAttribute="bottom" constant="8" id="nAL-Uf-buU"/>
+                            <constraint firstItem="9JH-D5-tsz" firstAttribute="centerX" secondItem="OB6-es-lbJ" secondAttribute="centerX" id="o84-2K-7ip"/>
+                            <constraint firstItem="Ccs-Rm-td3" firstAttribute="trailing" secondItem="ZPH-gq-otb" secondAttribute="trailing" constant="26.333333333333314" id="oX1-y3-8ER"/>
+                            <constraint firstItem="Ihh-2b-13f" firstAttribute="top" secondItem="8Bf-Uq-UvJ" secondAttribute="bottom" constant="8" id="owh-fv-UXy"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="Xaa-5D-YKx"/>
+                    <connections>
+                        <outlet property="actionButton" destination="8Bf-Uq-UvJ" id="vr6-bh-JJc"/>
+                        <outlet property="difficultyLabel" destination="atb-x8-uWe" id="Q2E-Bk-ENe"/>
+                        <outlet property="exitButton" destination="OB6-es-lbJ" id="0IN-Zy-6Ht"/>
+                        <outlet property="finalButton" destination="Ihh-2b-13f" id="5qa-Hr-jQX"/>
+                        <outlet property="questionCounterLabel" destination="9JH-D5-tsz" id="qvX-xC-dc4"/>
+                        <outlet property="questionTextLabel" destination="zbA-kr-kke" id="LM1-Ez-RNh"/>
+                        <outlet property="tableView" destination="ZPH-gq-otb" id="UFs-Aa-7Wm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="APV-xF-S6q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="803.81679389312978" y="338.73239436619718"/>
+        </scene>
+        <!--Result View Controller-->
+        <scene sceneID="oSW-RF-aVn">
+            <objects>
+                <viewController storyboardIdentifier="ResultViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="oGI-5j-0TN" customClass="ResultViewController" customModule="Bool" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Mi9-aE-tQg">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Результат" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pmQ-QD-D24">
+                                <rect key="frame" x="47" y="79" width="301" height="37"/>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="36"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="9xi-qd-U54">
+                                <rect key="frame" x="47" y="179" width="299" height="538"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LOA-dz-qp1">
+                                <rect key="frame" x="131" y="762" width="133" height="33"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Выйти">
+                                            <attributes>
+                                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="18" name="Copperplate"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="exitButtonTapped:" destination="oGI-5j-0TN" eventType="touchUpInside" id="OX6-dU-PBN"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="счет" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cVJ-8g-HXC">
+                                <rect key="frame" x="47" y="124" width="299" height="37"/>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="36"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="QXn-Fj-NfE"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="9xi-qd-U54" firstAttribute="top" secondItem="cVJ-8g-HXC" secondAttribute="bottom" constant="18" id="0Ue-Di-Jwf"/>
+                            <constraint firstItem="pmQ-QD-D24" firstAttribute="top" secondItem="QXn-Fj-NfE" secondAttribute="top" constant="79" id="1Ai-rE-bwD"/>
+                            <constraint firstItem="pmQ-QD-D24" firstAttribute="leading" secondItem="QXn-Fj-NfE" secondAttribute="leading" constant="47" id="7Pc-5X-3uZ"/>
+                            <constraint firstItem="QXn-Fj-NfE" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="LOA-dz-qp1" secondAttribute="trailing" constant="129" id="A6u-rk-51P"/>
+                            <constraint firstItem="LOA-dz-qp1" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="QXn-Fj-NfE" secondAttribute="leading" constant="131" id="Kqj-Lc-TIJ"/>
+                            <constraint firstItem="9xi-qd-U54" firstAttribute="centerX" secondItem="Mi9-aE-tQg" secondAttribute="centerX" id="QIG-1l-WD9"/>
+                            <constraint firstItem="QXn-Fj-NfE" firstAttribute="bottom" secondItem="LOA-dz-qp1" secondAttribute="bottom" constant="57" id="WB0-w1-uM6"/>
+                            <constraint firstItem="cVJ-8g-HXC" firstAttribute="top" secondItem="pmQ-QD-D24" secondAttribute="bottom" constant="8" id="X3e-pC-ASQ"/>
+                            <constraint firstItem="cVJ-8g-HXC" firstAttribute="leading" secondItem="pmQ-QD-D24" secondAttribute="leading" id="b7o-5b-Wzv"/>
+                            <constraint firstItem="LOA-dz-qp1" firstAttribute="centerX" secondItem="pmQ-QD-D24" secondAttribute="centerX" id="gd6-SH-pXh"/>
+                            <constraint firstItem="cVJ-8g-HXC" firstAttribute="centerX" secondItem="9xi-qd-U54" secondAttribute="centerX" id="jMl-bO-5F8"/>
+                            <constraint firstItem="LOA-dz-qp1" firstAttribute="top" secondItem="9xi-qd-U54" secondAttribute="bottom" constant="45" id="qLe-4S-Rpd"/>
+                            <constraint firstItem="pmQ-QD-D24" firstAttribute="leading" secondItem="9xi-qd-U54" secondAttribute="leading" id="vWJ-Mv-EZ0"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="exitButton" destination="LOA-dz-qp1" id="Irh-bd-XpS"/>
+                        <outlet property="scoreLabel" destination="cVJ-8g-HXC" id="xXz-BA-9wV"/>
+                        <outlet property="tableView" destination="9xi-qd-U54" id="Evb-wW-IZC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="udY-kf-gO8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1590" y="339"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Zde-Sq-XJ5">
+            <objects>
+                <viewController id="II1-yZ-rV4" customClass="ViewController" customModule="Bool" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="F7l-cx-cO3">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="feM-C3-gy3">
+                                <rect key="frame" x="39.333333333333343" y="119" width="314.33333333333326" height="106.66666666666669"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Учебный">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="28" name="Copperplate"/>
+                                            <font key="NSOriginalFont" size="17" name="Didot"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="28" name="Copperplate"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="тренажер">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="28" name="Copperplate"/>
+                                            <font key="NSOriginalFont" size="17" name="Didot"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="28" name="Copperplate"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="по">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="28" name="Copperplate"/>
+                                            <font key="NSOriginalFont" size="17" name="Didot"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="28" name="Copperplate"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="булевым">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="28" name="Copperplate"/>
+                                            <font key="NSOriginalFont" size="17" name="Didot"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content=" ">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="28" name="Copperplate"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="функциям">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="28" name="Copperplate"/>
+                                            <font key="NSOriginalFont" size="17" name="Didot"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <color key="highlightedColor" systemColor="tintColor"/>
+                            </label>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="3ck-fu-3be">
+                                <rect key="frame" x="94" y="646" width="205" height="32"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <segments>
+                                    <segment title="1"/>
+                                    <segment title="2"/>
+                                    <segment title="3"/>
+                                </segments>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fkt-ba-sjx">
+                                <rect key="frame" x="146" y="619" width="101" height="19"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Сложность">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="18" name="Copperplate"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fse-4r-aGd">
+                                <rect key="frame" x="103" y="343" width="187" height="51"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Теория">
+                                    <fontDescription key="titleFontDescription" name="Copperplate" family="Copperplate" pointSize="36"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HfQ-m9-kZ7">
+                                <rect key="frame" x="102.99999999999999" y="462" width="177.66666666666663" height="50"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Начать">
+                                    <fontDescription key="titleFontDescription" name="Copperplate" family="Copperplate" pointSize="36"/>
+                                </buttonConfiguration>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="BOw-HF-Dc8"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="HfQ-m9-kZ7" secondAttribute="bottom" constant="340" id="1tD-jt-kCe"/>
+                            <constraint firstItem="feM-C3-gy3" firstAttribute="centerX" secondItem="Fkt-ba-sjx" secondAttribute="centerX" id="6Dk-tH-gaz"/>
+                            <constraint firstItem="HfQ-m9-kZ7" firstAttribute="leading" secondItem="fse-4r-aGd" secondAttribute="leading" id="6TV-xs-UF8"/>
+                            <constraint firstItem="HfQ-m9-kZ7" firstAttribute="leading" secondItem="BOw-HF-Dc8" secondAttribute="leading" constant="103" id="7Tc-Kf-nxd"/>
+                            <constraint firstItem="feM-C3-gy3" firstAttribute="centerX" secondItem="3ck-fu-3be" secondAttribute="centerX" id="O2N-gn-dGo"/>
+                            <constraint firstItem="feM-C3-gy3" firstAttribute="top" secondItem="BOw-HF-Dc8" secondAttribute="top" constant="60" id="OK7-E3-hgb"/>
+                            <constraint firstItem="3ck-fu-3be" firstAttribute="leading" secondItem="BOw-HF-Dc8" secondAttribute="leading" constant="94" id="apP-3u-6xQ"/>
+                            <constraint firstItem="HfQ-m9-kZ7" firstAttribute="top" secondItem="fse-4r-aGd" secondAttribute="bottom" constant="68" id="cqF-S7-I7k"/>
+                            <constraint firstItem="feM-C3-gy3" firstAttribute="centerX" secondItem="F7l-cx-cO3" secondAttribute="centerX" id="l6W-88-P6A"/>
+                            <constraint firstItem="feM-C3-gy3" firstAttribute="width" secondItem="F7l-cx-cO3" secondAttribute="width" multiplier="0.8" id="mdE-pV-g5h"/>
+                            <constraint firstItem="feM-C3-gy3" firstAttribute="centerX" secondItem="HfQ-m9-kZ7" secondAttribute="centerX" constant="4.6666666666666572" id="mjd-tU-qUv"/>
+                            <constraint firstItem="BOw-HF-Dc8" firstAttribute="bottom" secondItem="3ck-fu-3be" secondAttribute="bottom" constant="141" id="rrz-eA-3z3"/>
+                            <constraint firstItem="feM-C3-gy3" firstAttribute="height" secondItem="F7l-cx-cO3" secondAttribute="height" multiplier="0.09" constant="29.920000000000002" id="tRm-om-6jk"/>
+                            <constraint firstItem="3ck-fu-3be" firstAttribute="top" secondItem="Fkt-ba-sjx" secondAttribute="bottom" constant="8" id="thJ-m2-x3J"/>
+                            <constraint firstItem="feM-C3-gy3" firstAttribute="centerX" secondItem="fse-4r-aGd" secondAttribute="centerX" id="vkr-n2-aK0"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="difficultySegmentedControl" destination="3ck-fu-3be" id="bMA-O3-SPZ"/>
+                        <outlet property="startButton" destination="HfQ-m9-kZ7" id="7eO-rT-ii7"/>
+                        <outlet property="theoryButton" destination="fse-4r-aGd" id="pHi-jA-otm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7AD-8Y-1yQ" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-170.40000000000001" y="8.1280788177339911"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tintColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
