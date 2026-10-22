@@ -33,11 +33,7 @@ extension ExpressionNode {
         case .constant(let value):
             return value ? "1" : "0"
         case .negation(let child):
-            // ¬ применяется к атому — без скобок; к выражению — в скобках
             let inner = child.toString(parentPrecedence: LogicOperation.not.precedence)
-            if case .binary = child {
-                return "¬(\(inner))"
-            }
             return "¬\(inner)"
         case .binary(let op, let left, let right):
             let myPrecedence = op.precedence

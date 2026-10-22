@@ -169,7 +169,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-170.40000000000001" y="8.1280788177339911"/>
+            <point key="canvasLocation" x="-459" y="-5"/>
         </scene>
         <!--Theory View Controller-->
         <scene sceneID="oaI-Cg-14e">
@@ -486,161 +486,6 @@
             </objects>
             <point key="canvasLocation" x="1590" y="339"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="Zde-Sq-XJ5">
-            <objects>
-                <viewController id="II1-yZ-rV4" customClass="ViewController" customModule="Bool" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="F7l-cx-cO3">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="feM-C3-gy3">
-                                <rect key="frame" x="39.333333333333343" y="119" width="314.33333333333326" height="106.66666666666669"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="Учебный">
-                                        <attributes>
-                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="28" name="Copperplate"/>
-                                            <font key="NSOriginalFont" size="17" name="Didot"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content=" ">
-                                        <attributes>
-                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="28" name="Copperplate"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="тренажер">
-                                        <attributes>
-                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="28" name="Copperplate"/>
-                                            <font key="NSOriginalFont" size="17" name="Didot"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content=" ">
-                                        <attributes>
-                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="28" name="Copperplate"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="по">
-                                        <attributes>
-                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="28" name="Copperplate"/>
-                                            <font key="NSOriginalFont" size="17" name="Didot"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content=" ">
-                                        <attributes>
-                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="28" name="Copperplate"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="булевым">
-                                        <attributes>
-                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="28" name="Copperplate"/>
-                                            <font key="NSOriginalFont" size="17" name="Didot"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content=" ">
-                                        <attributes>
-                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="28" name="Copperplate"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                    <fragment content="функциям">
-                                        <attributes>
-                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="28" name="Copperplate"/>
-                                            <font key="NSOriginalFont" size="17" name="Didot"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <color key="highlightedColor" systemColor="tintColor"/>
-                            </label>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="3ck-fu-3be">
-                                <rect key="frame" x="94" y="646" width="205" height="32"/>
-                                <color key="backgroundColor" name="AccentColor"/>
-                                <segments>
-                                    <segment title="1"/>
-                                    <segment title="2"/>
-                                    <segment title="3"/>
-                                </segments>
-                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </segmentedControl>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fkt-ba-sjx">
-                                <rect key="frame" x="146" y="619" width="101" height="19"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="Сложность">
-                                        <attributes>
-                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="18" name="Copperplate"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fse-4r-aGd">
-                                <rect key="frame" x="103" y="343" width="187" height="51"/>
-                                <color key="backgroundColor" name="AccentColor"/>
-                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Теория">
-                                    <fontDescription key="titleFontDescription" name="Copperplate" family="Copperplate" pointSize="36"/>
-                                </buttonConfiguration>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HfQ-m9-kZ7">
-                                <rect key="frame" x="102.99999999999999" y="462" width="177.66666666666663" height="50"/>
-                                <color key="backgroundColor" name="AccentColor"/>
-                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Начать">
-                                    <fontDescription key="titleFontDescription" name="Copperplate" family="Copperplate" pointSize="36"/>
-                                </buttonConfiguration>
-                            </button>
-                        </subviews>
-                        <viewLayoutGuide key="safeArea" id="BOw-HF-Dc8"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstAttribute="bottom" secondItem="HfQ-m9-kZ7" secondAttribute="bottom" constant="340" id="1tD-jt-kCe"/>
-                            <constraint firstItem="feM-C3-gy3" firstAttribute="centerX" secondItem="Fkt-ba-sjx" secondAttribute="centerX" id="6Dk-tH-gaz"/>
-                            <constraint firstItem="HfQ-m9-kZ7" firstAttribute="leading" secondItem="fse-4r-aGd" secondAttribute="leading" id="6TV-xs-UF8"/>
-                            <constraint firstItem="HfQ-m9-kZ7" firstAttribute="leading" secondItem="BOw-HF-Dc8" secondAttribute="leading" constant="103" id="7Tc-Kf-nxd"/>
-                            <constraint firstItem="feM-C3-gy3" firstAttribute="centerX" secondItem="3ck-fu-3be" secondAttribute="centerX" id="O2N-gn-dGo"/>
-                            <constraint firstItem="feM-C3-gy3" firstAttribute="top" secondItem="BOw-HF-Dc8" secondAttribute="top" constant="60" id="OK7-E3-hgb"/>
-                            <constraint firstItem="3ck-fu-3be" firstAttribute="leading" secondItem="BOw-HF-Dc8" secondAttribute="leading" constant="94" id="apP-3u-6xQ"/>
-                            <constraint firstItem="HfQ-m9-kZ7" firstAttribute="top" secondItem="fse-4r-aGd" secondAttribute="bottom" constant="68" id="cqF-S7-I7k"/>
-                            <constraint firstItem="feM-C3-gy3" firstAttribute="centerX" secondItem="F7l-cx-cO3" secondAttribute="centerX" id="l6W-88-P6A"/>
-                            <constraint firstItem="feM-C3-gy3" firstAttribute="width" secondItem="F7l-cx-cO3" secondAttribute="width" multiplier="0.8" id="mdE-pV-g5h"/>
-                            <constraint firstItem="feM-C3-gy3" firstAttribute="centerX" secondItem="HfQ-m9-kZ7" secondAttribute="centerX" constant="4.6666666666666572" id="mjd-tU-qUv"/>
-                            <constraint firstItem="BOw-HF-Dc8" firstAttribute="bottom" secondItem="3ck-fu-3be" secondAttribute="bottom" constant="141" id="rrz-eA-3z3"/>
-                            <constraint firstItem="feM-C3-gy3" firstAttribute="height" secondItem="F7l-cx-cO3" secondAttribute="height" multiplier="0.09" constant="29.920000000000002" id="tRm-om-6jk"/>
-                            <constraint firstItem="3ck-fu-3be" firstAttribute="top" secondItem="Fkt-ba-sjx" secondAttribute="bottom" constant="8" id="thJ-m2-x3J"/>
-                            <constraint firstItem="feM-C3-gy3" firstAttribute="centerX" secondItem="fse-4r-aGd" secondAttribute="centerX" id="vkr-n2-aK0"/>
-                        </constraints>
-                    </view>
-                    <connections>
-                        <outlet property="difficultySegmentedControl" destination="3ck-fu-3be" id="bMA-O3-SPZ"/>
-                        <outlet property="startButton" destination="HfQ-m9-kZ7" id="7eO-rT-ii7"/>
-                        <outlet property="theoryButton" destination="fse-4r-aGd" id="pHi-jA-otm"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="7AD-8Y-1yQ" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-170.40000000000001" y="8.1280788177339911"/>
-        </scene>
     </scenes>
     <resources>
         <namedColor name="AccentColor">
@@ -650,7 +495,7 @@
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="tintColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

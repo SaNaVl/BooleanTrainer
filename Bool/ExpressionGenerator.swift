@@ -79,40 +79,38 @@ class ExpressionGenerator {
     
     private static func shouldRegenerate(tree: ExpressionNode,
                                          difficulty: Difficulty) -> Bool {
-        // Тривиальное выражение — всегда плохо
-        if isTrivial(tree) { return true }
+        if containsDoubleNegation(tree) { return true }
+        if isTrivialRoot(tree) { return true }
         
         let usedVars = Set(tree.collectVariables())
         
-        // На hard нужно минимум 2 разные переменные
         if difficulty == .hard && usedVars.count < 2 { return true }
-        
-        // На medium тоже — хотя бы 2
         if difficulty == .medium && usedVars.count < 2 { return true }
-        
-        // На hard — минимум 2 бинарные операции в дереве
         if difficulty == .hard && countBinaryOperations(tree) < 2 { return true }
         
         return false
     }
     
-    private static func isTrivial(_ node: ExpressionNode) -> Bool {
+    private static func containsDoubleNegation(_ node: ExpressionNode) -> Bool {
         switch node {
         case .variable, .constant:
-            return true
-        case .negation(let child):
-            if case .negation = child { return true } // ¬¬X
-            return isTrivial(child)
-        case .binary(_, let left, let right):
-            // A ∧ A, A ∨ A — одинаковые операнды
-            if left.toString() == right.toString() { return true }
-            // A op ¬A
-            if case .negation(let inner) = right,
-               left.toString() == inner.toString() { return true }
-            if case .negation(let inner) = left,
-               right.toString() == inner.toString() { return true }
             return false
+        case .negation(let child):
+            if case .negation = child { return true }
+            return containsDoubleNegation(child)
+        case .binary(_, let left, let right):
+            return containsDoubleNegation(left) || containsDoubleNegation(right)
         }
+    }
+
+    private static func isTrivialRoot(_ node: ExpressionNode) -> Bool {
+        guard case .binary(_, let left, let right) = node else { return false }
+        if left.toString() == right.toString() { return true }
+        if case .negation(let inner) = right,
+           left.toString() == inner.toString() { return true }
+        if case .negation(let inner) = left,
+           right.toString() == inner.toString() { return true }
+        return false
     }
     
     private static func countBinaryOperations(_ node: ExpressionNode) -> Int {
@@ -171,6 +169,10 @@ class ExpressionGenerator {
                 difficulty: difficulty,
                 allowParentheses: allowParentheses
             )
+            // Не оборачиваем отрицание в отрицание
+            if case .negation = child {
+                return child
+            }
             return .negation(child)
             
         default:
