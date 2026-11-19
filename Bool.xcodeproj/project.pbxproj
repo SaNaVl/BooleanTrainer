@@ -10,6 +10,9 @@
 		6B0FC82E307E604000A3C030 /* ExpressionNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0FC82D307E604000A3C030 /* ExpressionNode.swift */; };
 		6B0FC832307E604000A3C030 /* TruthTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0FC831307E604000A3C030 /* TruthTable.swift */; };
 		6B0FC834307E604000A3C030 /* TruthTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0FC833307E604000A3C030 /* TruthTableViewController.swift */; };
+		6B0FC836307E604000A3C030 /* CustomFormulaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0FC835307E604000A3C030 /* CustomFormulaViewController.swift */; };
+		6B0FC838307E604000A3C030 /* ExpressionParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0FC837307E604000A3C030 /* ExpressionParser.swift */; };
+		6B354E7C308A397D00EFDFBF /* ExpressionParserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B354E7B308A397D00EFDFBF /* ExpressionParserTests.swift */; };
 		6B354E74308A392900EFDFBF /* ExpressionNodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B354E73308A392900EFDFBF /* ExpressionNodeTests.swift */; };
 		6B354E76308A396100EFDFBF /* ExpressionGeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B354E75308A396100EFDFBF /* ExpressionGeneratorTests.swift */; };
 		6B354E78308A397D00EFDFBF /* QuestionBankTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B354E77308A397D00EFDFBF /* QuestionBankTests.swift */; };
@@ -45,6 +48,9 @@
 		6B0FC82D307E604000A3C030 /* ExpressionNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpressionNode.swift; sourceTree = "<group>"; };
 		6B0FC831307E604000A3C030 /* TruthTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TruthTable.swift; sourceTree = "<group>"; };
 		6B0FC833307E604000A3C030 /* TruthTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TruthTableViewController.swift; sourceTree = "<group>"; };
+		6B0FC835307E604000A3C030 /* CustomFormulaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFormulaViewController.swift; sourceTree = "<group>"; };
+		6B0FC837307E604000A3C030 /* ExpressionParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpressionParser.swift; sourceTree = "<group>"; };
+		6B354E7B308A397D00EFDFBF /* ExpressionParserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpressionParserTests.swift; sourceTree = "<group>"; };
 		6B354E6A308A38FD00EFDFBF /* BoolTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BoolTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B354E73308A392900EFDFBF /* ExpressionNodeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpressionNodeTests.swift; sourceTree = "<group>"; };
 		6B354E75308A396100EFDFBF /* ExpressionGeneratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpressionGeneratorTests.swift; sourceTree = "<group>"; };
@@ -95,6 +101,7 @@
 				6BFE061B2F4DC49D00A18247 /* TrainerViewController.swift */,
 				6B8EC24C2F7BC721005721A5 /* ResultViewController.swift */,
 				6B0FC833307E604000A3C030 /* TruthTableViewController.swift */,
+				6B0FC835307E604000A3C030 /* CustomFormulaViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -106,6 +113,7 @@
 				6B354E75308A396100EFDFBF /* ExpressionGeneratorTests.swift */,
 				6B354E77308A397D00EFDFBF /* QuestionBankTests.swift */,
 				6B354E79308A397D00EFDFBF /* TruthTableTests.swift */,
+				6B354E7B308A397D00EFDFBF /* ExpressionParserTests.swift */,
 			);
 			path = BoolTests;
 			sourceTree = "<group>";
@@ -146,6 +154,7 @@
 				6B8EC24A2F7BBD26005721A5 /* UserAnswer.swift */,
 				6B0FC82D307E604000A3C030 /* ExpressionNode.swift */,
 				6B0FC831307E604000A3C030 /* TruthTable.swift */,
+				6B0FC837307E604000A3C030 /* ExpressionParser.swift */,
 			);
 			path = Bool;
 			sourceTree = "<group>";
@@ -256,6 +265,7 @@
 				6B354E78308A397D00EFDFBF /* QuestionBankTests.swift in Sources */,
 				6B354E76308A396100EFDFBF /* ExpressionGeneratorTests.swift in Sources */,
 				6B354E7A308A397D00EFDFBF /* TruthTableTests.swift in Sources */,
+				6B354E7C308A397D00EFDFBF /* ExpressionParserTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +288,8 @@
 				6B8F43FC2F47036900EC8B3B /* SceneDelegate.swift in Sources */,
 				6B8EC24D2F7BC721005721A5 /* ResultViewController.swift in Sources */,
 				6B0FC834307E604000A3C030 /* TruthTableViewController.swift in Sources */,
+				6B0FC836307E604000A3C030 /* CustomFormulaViewController.swift in Sources */,
+				6B0FC838307E604000A3C030 /* ExpressionParser.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

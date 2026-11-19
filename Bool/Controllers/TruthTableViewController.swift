@@ -16,9 +16,10 @@ class TruthTableViewController: UIViewController {
     
     // MARK: - Публичные свойства
     var selectedDifficulty: Difficulty = .medium
+    var customTable: TruthTable?
     
     // MARK: - Приватное состояние
-    private let totalTablesCount = 3
+    private var totalTablesCount = 3
     private var tables: [TruthTable] = []
     private var currentTableIndex = 0
     private var isTableChecked = false
@@ -68,11 +69,18 @@ class TruthTableViewController: UIViewController {
     private func setupSession() {
         tables.removeAll()
         completedTableIndices.removeAll()
-        var usedExpressions: Set<String> = []
-        for _ in 0..<totalTablesCount {
-            let table = TruthTable.generate(difficulty: selectedDifficulty, excluding: usedExpressions)
-            usedExpressions.insert(table.expressionString)
-            tables.append(table)
+        
+        if let customTable = customTable {
+            totalTablesCount = 1
+            tables.append(customTable)
+        } else {
+            totalTablesCount = 3
+            var usedExpressions: Set<String> = []
+            for _ in 0..<totalTablesCount {
+                let table = TruthTable.generate(difficulty: selectedDifficulty, excluding: usedExpressions)
+                usedExpressions.insert(table.expressionString)
+                tables.append(table)
+            }
         }
         currentTableIndex = 0
         displayCurrentTable()
@@ -82,8 +90,13 @@ class TruthTableViewController: UIViewController {
         guard let table = truthTable else { return }
         isTableChecked = false
         
-        counterLabel?.text = "Таблица \(currentTableIndex + 1) из \(totalTablesCount)"
-        difficultyLabel?.text = "Сложность: \(selectedDifficulty.description)"
+        if customTable != nil {
+            counterLabel?.text = "Своя формула"
+            difficultyLabel?.text = "Пользовательский ввод"
+        } else {
+            counterLabel?.text = "Таблица \(currentTableIndex + 1) из \(totalTablesCount)"
+            difficultyLabel?.text = "Сложность: \(selectedDifficulty.description)"
+        }
         expressionFormulaLabel?.text = "F = \(table.expressionString)"
         instructionLabel?.text = "Заполните столбец F для всех наборов:"
         

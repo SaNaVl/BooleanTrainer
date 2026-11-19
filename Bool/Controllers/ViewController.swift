@@ -7,14 +7,16 @@ class ViewController: UIViewController {
     @IBOutlet weak var difficultySegmentedControl: UISegmentedControl!
     @IBOutlet weak var startButton: UIButton!
     @IBOutlet weak var truthTableButton: UIButton!
+    @IBOutlet weak var customFormulaButton: UIButton!
     
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         overrideUserInterfaceStyle = .light
         theoryButton?.layer.cornerRadius = 10
-        startButton?.layer.cornerRadius = 10 // скос
+        startButton?.layer.cornerRadius = 10
         truthTableButton?.layer.cornerRadius = 10
+        customFormulaButton?.layer.cornerRadius = 10
     }
     
     // MARK: - Navigation

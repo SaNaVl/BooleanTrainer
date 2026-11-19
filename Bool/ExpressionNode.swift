@@ -1,11 +1,15 @@
 import Foundation
 
 /// Узел дерева логического выражения
-indirect enum ExpressionNode: Equatable {
+indirect enum ExpressionNode: Equatable, CustomStringConvertible {
     case variable(Character)
     case constant(Bool)
     case negation(ExpressionNode)
     case binary(LogicOperation, ExpressionNode, ExpressionNode)
+    
+    var description: String {
+        return toString()
+    }
 }
 
 extension ExpressionNode {

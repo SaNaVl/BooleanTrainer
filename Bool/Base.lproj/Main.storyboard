@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="TFz-tB-gLh">
-                                <rect key="frame" x="94" y="646" width="205" height="33"/>
+                                <rect key="frame" x="94" y="726" width="205" height="33"/>
                                 <color key="backgroundColor" name="AccentColor"/>
                                 <segments>
                                     <segment title="1"/>
@@ -29,7 +29,7 @@
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </segmentedControl>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fkF-c5-dA0">
-                                <rect key="frame" x="146" y="619" width="101" height="19"/>
+                                <rect key="frame" x="146" y="699" width="101" height="19"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Сложность">
                                         <attributes>
@@ -42,7 +42,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nev-4y-Ei2">
-                                <rect key="frame" x="103" y="283" width="187" height="51"/>
+                                <rect key="frame" x="103" y="258" width="187" height="51"/>
                                 <color key="backgroundColor" name="AccentColor"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
@@ -54,7 +54,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E2t-CF-gpV">
-                                <rect key="frame" x="103" y="380" width="187" height="51"/>
+                                <rect key="frame" x="103" y="329" width="187" height="51"/>
                                 <color key="backgroundColor" name="AccentColor"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
@@ -66,7 +66,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6B0-TT-btn">
-                                <rect key="frame" x="103" y="474" width="187" height="51"/>
+                                <rect key="frame" x="103" y="400" width="187" height="51"/>
                                 <color key="backgroundColor" name="AccentColor"/>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="Button"/>
@@ -76,6 +76,19 @@
                                 </buttonConfiguration>
                                 <connections>
                                     <segue destination="6B0-TT-sc1" kind="presentation" identifier="showTruthTable" modalPresentationStyle="fullScreen" id="6B0-TT-sg1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6C0-CF-btn">
+                                <rect key="frame" x="103" y="471" width="187" height="51"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Своя формула" titleAlignment="center">
+                                    <fontDescription key="titleFontDescription" name="Copperplate" family="Copperplate" pointSize="24"/>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="CF0-SC-sc1" kind="presentation" identifier="showCustomFormula" modalPresentationStyle="fullScreen" id="6C0-CF-sg1"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R3h-gS-k2c">
@@ -161,15 +174,15 @@
                             <constraint firstItem="R3h-gS-k2c" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VC-c02"/>
                             <constraint firstItem="R3h-gS-k2c" firstAttribute="width" constant="314" id="VC-c03"/>
                             <constraint firstItem="R3h-gS-k2c" firstAttribute="height" constant="107" id="VC-c04"/>
-                            <constraint firstItem="nev-4y-Ei2" firstAttribute="top" secondItem="R3h-gS-k2c" secondAttribute="bottom" constant="55" id="VC-c05"/>
+                            <constraint firstItem="nev-4y-Ei2" firstAttribute="top" secondItem="R3h-gS-k2c" secondAttribute="bottom" constant="30" id="VC-c05"/>
                             <constraint firstItem="nev-4y-Ei2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VC-c06"/>
                             <constraint firstItem="nev-4y-Ei2" firstAttribute="width" constant="187" id="VC-c07"/>
                             <constraint firstItem="nev-4y-Ei2" firstAttribute="height" constant="51" id="VC-c08"/>
-                            <constraint firstItem="E2t-CF-gpV" firstAttribute="top" secondItem="nev-4y-Ei2" secondAttribute="bottom" constant="46" id="VC-c09"/>
+                            <constraint firstItem="E2t-CF-gpV" firstAttribute="top" secondItem="nev-4y-Ei2" secondAttribute="bottom" constant="20" id="VC-c09"/>
                             <constraint firstItem="E2t-CF-gpV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VC-c10"/>
                             <constraint firstItem="E2t-CF-gpV" firstAttribute="width" constant="187" id="VC-c11"/>
                             <constraint firstItem="E2t-CF-gpV" firstAttribute="height" constant="51" id="VC-c12"/>
-                            <constraint firstItem="6B0-TT-btn" firstAttribute="top" secondItem="E2t-CF-gpV" secondAttribute="bottom" constant="43" id="VC-c13"/>
+                            <constraint firstItem="6B0-TT-btn" firstAttribute="top" secondItem="E2t-CF-gpV" secondAttribute="bottom" constant="20" id="VC-c13"/>
                             <constraint firstItem="6B0-TT-btn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VC-c14"/>
                             <constraint firstItem="6B0-TT-btn" firstAttribute="width" constant="187" id="VC-c15"/>
                             <constraint firstItem="6B0-TT-btn" firstAttribute="height" constant="51" id="VC-c16"/>
@@ -178,12 +191,17 @@
                             <constraint firstItem="fkF-c5-dA0" firstAttribute="width" constant="101" id="VC-c19"/>
                             <constraint firstItem="fkF-c5-dA0" firstAttribute="height" constant="19" id="VC-c20"/>
                             <constraint firstItem="TFz-tB-gLh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VC-c21"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="TFz-tB-gLh" secondAttribute="bottom" constant="140" id="VC-c22"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="TFz-tB-gLh" secondAttribute="bottom" constant="60" id="VC-c22"/>
                             <constraint firstItem="TFz-tB-gLh" firstAttribute="width" constant="205" id="VC-c23"/>
                             <constraint firstItem="TFz-tB-gLh" firstAttribute="height" constant="32" id="VC-c24"/>
+                            <constraint firstItem="6C0-CF-btn" firstAttribute="top" secondItem="6B0-TT-btn" secondAttribute="bottom" constant="20" id="VC-c25"/>
+                            <constraint firstItem="6C0-CF-btn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VC-c26"/>
+                            <constraint firstItem="6C0-CF-btn" firstAttribute="width" constant="187" id="VC-c27"/>
+                            <constraint firstItem="6C0-CF-btn" firstAttribute="height" constant="51" id="VC-c28"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="customFormulaButton" destination="6C0-CF-btn" id="6C0-CF-out"/>
                         <outlet property="difficultySegmentedControl" destination="TFz-tB-gLh" id="1tN-kZ-jPR"/>
                         <outlet property="startButton" destination="E2t-CF-gpV" id="FfC-lH-Ne2"/>
                         <outlet property="theoryButton" destination="nev-4y-Ei2" id="wIZ-hR-imT"/>
@@ -192,7 +210,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-460.30534351145036" y="319.71830985915494"/>
+            <point key="canvasLocation" x="384" y="336"/>
         </scene>
         <!--Theory View Controller-->
         <scene sceneID="oaI-Cg-14e">
@@ -256,7 +274,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zmt-dM-UMY" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="804" y="-315"/>
+            <point key="canvasLocation" x="1218" y="-315"/>
         </scene>
         <!--Trainer View Controller-->
         <scene sceneID="X1Y-3t-Zch">
@@ -433,7 +451,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="APV-xF-S6q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="803.81679389312978" y="338.73239436619718"/>
+            <point key="canvasLocation" x="1218" y="336"/>
         </scene>
         <!--Result View Controller-->
         <scene sceneID="oSW-RF-aVn">
@@ -474,7 +492,7 @@
                                     <action selector="exitButtonTapped:" destination="oGI-5j-0TN" eventType="touchUpInside" id="OX6-dU-PBN"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="счет" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontSizeToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cVJ-8g-HXC">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="счет" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="cVJ-8g-HXC">
                                 <rect key="frame" x="47" y="124" width="299" height="37"/>
                                 <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="36"/>
                                 <nil key="textColor"/>
@@ -507,7 +525,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="udY-kf-gO8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="804" y="1067"/>
+            <point key="canvasLocation" x="1219" y="1130"/>
         </scene>
         <!--Truth Table View Controller-->
         <scene sceneID="6B0-TT-sc0">
@@ -699,18 +717,379 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6B0-TT-rsp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-460.30534351145036" y="1066.9014084507044"/>
+            <point key="canvasLocation" x="384" y="1130"/>
+        </scene>
+        <!--Custom Formula View Controller-->
+        <scene sceneID="CF0-SC-sc0">
+            <objects>
+                <viewController storyboardIdentifier="CustomFormulaViewController" id="CF0-SC-sc1" customClass="CustomFormulaViewController" customModule="Bool" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="CF0-SC-vw1">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CF0-SC-btnExit">
+                                <rect key="frame" x="20" y="16" width="80" height="40"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="80" id="CF0-SC-c01"/>
+                                    <constraint firstAttribute="height" constant="40" id="CF0-SC-c02"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Назад">
+                                    <fontDescription key="titleFontDescription" name="Copperplate" family="Copperplate" pointSize="18"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="exitButtonTapped:" destination="CF0-SC-sc1" eventType="touchUpInside" id="CF0-SC-acExit"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Своя формула" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CF0-SC-lblTitle">
+                                <rect key="frame" x="20" y="72" width="353" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="CF0-SC-c03"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="28"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Наберите логическое выражение:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CF0-SC-lblInst">
+                                <rect key="frame" x="20" y="112" width="353" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="CF0-SC-c04"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="15"/>
+                                <color key="textColor" systemColor="systemGrayColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CF0-SC-vwFormula">
+                                <rect key="frame" x="20" y="144" width="353" height="68"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Нажмите кнопки ниже..." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumScaleFactor="0.59999999999999998" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CF0-SC-lblFormula">
+                                        <rect key="frame" x="12" y="8" width="329" height="52"/>
+                                        <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="22"/>
+                                        <color key="textColor" systemColor="placeholderTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="68" id="CF0-SC-c05"/>
+                                    <constraint firstItem="CF0-SC-lblFormula" firstAttribute="top" secondItem="CF0-SC-vwFormula" secondAttribute="top" constant="8" id="CF0-SC-c06"/>
+                                    <constraint firstItem="CF0-SC-lblFormula" firstAttribute="bottom" secondItem="CF0-SC-vwFormula" secondAttribute="bottom" constant="-8" id="CF0-SC-c07"/>
+                                    <constraint firstItem="CF0-SC-lblFormula" firstAttribute="leading" secondItem="CF0-SC-vwFormula" secondAttribute="leading" constant="12" id="CF0-SC-c08"/>
+                                    <constraint firstItem="CF0-SC-lblFormula" firstAttribute="trailing" secondItem="CF0-SC-vwFormula" secondAttribute="trailing" constant="-12" id="CF0-SC-c09"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CF0-SC-lblError">
+                                <rect key="frame" x="20" y="218" width="353" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="CF0-SC-c10"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
+                                <color key="textColor" systemColor="systemRedColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="CF0-SC-stkKeypad">
+                                <rect key="frame" x="20" y="248" width="353" height="516"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="CF0-SC-stkRow1">
+                                        <rect key="frame" x="0.0" y="0.0" width="353" height="121.66666666666667"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CF0-SC-btnA">
+                                                <rect key="frame" x="0.0" y="0.0" width="80.666666666666671" height="121.66666666666667"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="A">
+                                                    <fontDescription key="titleFontDescription" name="Copperplate" family="Copperplate" pointSize="22"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="keypadButtonTapped:" destination="CF0-SC-sc1" eventType="touchUpInside" id="CF0-SC-acA"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CF0-SC-btnB">
+                                                <rect key="frame" x="90.666666666666686" y="0.0" width="81" height="121.66666666666667"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="B">
+                                                    <fontDescription key="titleFontDescription" name="Copperplate" family="Copperplate" pointSize="22"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="keypadButtonTapped:" destination="CF0-SC-sc1" eventType="touchUpInside" id="CF0-SC-acB"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CF0-SC-btnC">
+                                                <rect key="frame" x="181.66666666666666" y="0.0" width="80.666666666666657" height="121.66666666666667"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="C">
+                                                    <fontDescription key="titleFontDescription" name="Copperplate" family="Copperplate" pointSize="22"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="keypadButtonTapped:" destination="CF0-SC-sc1" eventType="touchUpInside" id="CF0-SC-acC"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CF0-SC-btnD">
+                                                <rect key="frame" x="272.33333333333331" y="0.0" width="80.666666666666686" height="121.66666666666667"/>
+                                                <color key="backgroundColor" systemColor="systemGray5Color"/>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="D">
+                                                    <fontDescription key="titleFontDescription" name="Copperplate" family="Copperplate" pointSize="22"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="keypadButtonTapped:" destination="CF0-SC-sc1" eventType="touchUpInside" id="CF0-SC-acD"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="CF0-SC-stkRow2">
+                                        <rect key="frame" x="0.0" y="131.66666666666669" width="353" height="121.33333333333331"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CF0-SC-btnParenOpen">
+                                                <rect key="frame" x="0.0" y="0.0" width="80.666666666666671" height="121.33333333333333"/>
+                                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                                <color key="tintColor" name="AccentColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="(">
+                                                    <fontDescription key="titleFontDescription" name="Copperplate" family="Copperplate" pointSize="20"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="keypadButtonTapped:" destination="CF0-SC-sc1" eventType="touchUpInside" id="CF0-SC-acParenOpen"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CF0-SC-btnParenClose">
+                                                <rect key="frame" x="90.666666666666686" y="0.0" width="81" height="121.33333333333333"/>
+                                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                                <color key="tintColor" name="AccentColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title=")">
+                                                    <fontDescription key="titleFontDescription" name="Copperplate" family="Copperplate" pointSize="20"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="keypadButtonTapped:" destination="CF0-SC-sc1" eventType="touchUpInside" id="CF0-SC-acParenClose"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CF0-SC-btnNot">
+                                                <rect key="frame" x="181.66666666666666" y="0.0" width="80.666666666666657" height="121.33333333333333"/>
+                                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                                <color key="tintColor" name="AccentColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="¬">
+                                                    <fontDescription key="titleFontDescription" name="Copperplate" family="Copperplate" pointSize="20"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="keypadButtonTapped:" destination="CF0-SC-sc1" eventType="touchUpInside" id="CF0-SC-acNot"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CF0-SC-btnNand">
+                                                <rect key="frame" x="272.33333333333331" y="0.0" width="80.666666666666686" height="121.33333333333333"/>
+                                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                                <color key="tintColor" name="AccentColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="↑">
+                                                    <fontDescription key="titleFontDescription" name="Copperplate" family="Copperplate" pointSize="20"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="keypadButtonTapped:" destination="CF0-SC-sc1" eventType="touchUpInside" id="CF0-SC-acNand"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="CF0-SC-stkRow3">
+                                        <rect key="frame" x="0.0" y="263" width="353" height="121.66666666666669"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CF0-SC-btnAnd">
+                                                <rect key="frame" x="0.0" y="0.0" width="80.666666666666671" height="121.66666666666667"/>
+                                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                                <color key="tintColor" name="AccentColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="∧">
+                                                    <fontDescription key="titleFontDescription" name="Copperplate" family="Copperplate" pointSize="20"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="keypadButtonTapped:" destination="CF0-SC-sc1" eventType="touchUpInside" id="CF0-SC-acAnd"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CF0-SC-btnOr">
+                                                <rect key="frame" x="90.666666666666686" y="0.0" width="81" height="121.66666666666667"/>
+                                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                                <color key="tintColor" name="AccentColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="∨">
+                                                    <fontDescription key="titleFontDescription" name="Copperplate" family="Copperplate" pointSize="20"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="keypadButtonTapped:" destination="CF0-SC-sc1" eventType="touchUpInside" id="CF0-SC-acOr"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CF0-SC-btnXor">
+                                                <rect key="frame" x="181.66666666666666" y="0.0" width="80.666666666666657" height="121.66666666666667"/>
+                                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                                <color key="tintColor" name="AccentColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="⊕">
+                                                    <fontDescription key="titleFontDescription" name="Copperplate" family="Copperplate" pointSize="20"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="keypadButtonTapped:" destination="CF0-SC-sc1" eventType="touchUpInside" id="CF0-SC-acXor"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CF0-SC-btnNor">
+                                                <rect key="frame" x="272.33333333333331" y="0.0" width="80.666666666666686" height="121.66666666666667"/>
+                                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                                <color key="tintColor" name="AccentColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="↓">
+                                                    <fontDescription key="titleFontDescription" name="Copperplate" family="Copperplate" pointSize="20"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="keypadButtonTapped:" destination="CF0-SC-sc1" eventType="touchUpInside" id="CF0-SC-acNor"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="CF0-SC-stkRow4">
+                                        <rect key="frame" x="0.0" y="394.66666666666663" width="353" height="121.33333333333337"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CF0-SC-btnImplies">
+                                                <rect key="frame" x="0.0" y="0.0" width="80.666666666666671" height="121.33333333333333"/>
+                                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                                <color key="tintColor" name="AccentColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="→">
+                                                    <fontDescription key="titleFontDescription" name="Copperplate" family="Copperplate" pointSize="20"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="keypadButtonTapped:" destination="CF0-SC-sc1" eventType="touchUpInside" id="CF0-SC-acImplies"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CF0-SC-btnEquiv">
+                                                <rect key="frame" x="90.666666666666686" y="0.0" width="81" height="121.33333333333333"/>
+                                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                                <color key="tintColor" name="AccentColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="↔">
+                                                    <fontDescription key="titleFontDescription" name="Copperplate" family="Copperplate" pointSize="20"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="keypadButtonTapped:" destination="CF0-SC-sc1" eventType="touchUpInside" id="CF0-SC-acEquiv"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CF0-SC-btnClear">
+                                                <rect key="frame" x="181.66666666666666" y="0.0" width="80.666666666666657" height="121.33333333333333"/>
+                                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                                <color key="tintColor" systemColor="systemRedColor"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Сброс">
+                                                    <fontDescription key="titleFontDescription" name="Copperplate" family="Copperplate" pointSize="14"/>
+                                                    <color key="baseForegroundColor" systemColor="systemRedColor"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="keypadButtonTapped:" destination="CF0-SC-sc1" eventType="touchUpInside" id="CF0-SC-acClear"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CF0-SC-btnBackspace">
+                                                <rect key="frame" x="272.33333333333331" y="0.0" width="80.666666666666686" height="121.33333333333333"/>
+                                                <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="⌫">
+                                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="20"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="keypadButtonTapped:" destination="CF0-SC-sc1" eventType="touchUpInside" id="CF0-SC-acBackspace"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CF0-SC-btnBuild">
+                                <rect key="frame" x="20" y="780" width="353" height="52"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="52" id="CF0-SC-c11"/>
+                                </constraints>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Построить таблицу">
+                                    <fontDescription key="titleFontDescription" name="Copperplate" family="Copperplate" pointSize="20"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="buildTableButtonTapped:" destination="CF0-SC-sc1" eventType="touchUpInside" id="CF0-SC-acBuild"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="CF0-SC-saf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="CF0-SC-btnExit" firstAttribute="top" secondItem="CF0-SC-saf" secondAttribute="top" constant="16" id="CF0-SC-c12"/>
+                            <constraint firstItem="CF0-SC-btnExit" firstAttribute="leading" secondItem="CF0-SC-saf" secondAttribute="leading" constant="20" id="CF0-SC-c13"/>
+                            <constraint firstItem="CF0-SC-lblTitle" firstAttribute="top" secondItem="CF0-SC-btnExit" secondAttribute="bottom" constant="16" id="CF0-SC-c14"/>
+                            <constraint firstItem="CF0-SC-lblTitle" firstAttribute="leading" secondItem="CF0-SC-saf" secondAttribute="leading" constant="20" id="CF0-SC-c15"/>
+                            <constraint firstItem="CF0-SC-lblTitle" firstAttribute="trailing" secondItem="CF0-SC-saf" secondAttribute="trailing" constant="-20" id="CF0-SC-c16"/>
+                            <constraint firstItem="CF0-SC-lblInst" firstAttribute="top" secondItem="CF0-SC-lblTitle" secondAttribute="bottom" constant="8" id="CF0-SC-c17"/>
+                            <constraint firstItem="CF0-SC-lblInst" firstAttribute="leading" secondItem="CF0-SC-saf" secondAttribute="leading" constant="20" id="CF0-SC-c18"/>
+                            <constraint firstItem="CF0-SC-lblInst" firstAttribute="trailing" secondItem="CF0-SC-saf" secondAttribute="trailing" constant="-20" id="CF0-SC-c19"/>
+                            <constraint firstItem="CF0-SC-vwFormula" firstAttribute="top" secondItem="CF0-SC-lblInst" secondAttribute="bottom" constant="12" id="CF0-SC-c20"/>
+                            <constraint firstItem="CF0-SC-vwFormula" firstAttribute="leading" secondItem="CF0-SC-saf" secondAttribute="leading" constant="20" id="CF0-SC-c21"/>
+                            <constraint firstItem="CF0-SC-vwFormula" firstAttribute="trailing" secondItem="CF0-SC-saf" secondAttribute="trailing" constant="-20" id="CF0-SC-c22"/>
+                            <constraint firstItem="CF0-SC-lblError" firstAttribute="top" secondItem="CF0-SC-vwFormula" secondAttribute="bottom" constant="6" id="CF0-SC-c23"/>
+                            <constraint firstItem="CF0-SC-lblError" firstAttribute="leading" secondItem="CF0-SC-saf" secondAttribute="leading" constant="20" id="CF0-SC-c24"/>
+                            <constraint firstItem="CF0-SC-lblError" firstAttribute="trailing" secondItem="CF0-SC-saf" secondAttribute="trailing" constant="-20" id="CF0-SC-c25"/>
+                            <constraint firstItem="CF0-SC-stkKeypad" firstAttribute="top" secondItem="CF0-SC-lblError" secondAttribute="bottom" constant="10" id="CF0-SC-c26"/>
+                            <constraint firstItem="CF0-SC-stkKeypad" firstAttribute="leading" secondItem="CF0-SC-saf" secondAttribute="leading" constant="20" id="CF0-SC-c27"/>
+                            <constraint firstItem="CF0-SC-stkKeypad" firstAttribute="trailing" secondItem="CF0-SC-saf" secondAttribute="trailing" constant="-20" id="CF0-SC-c28"/>
+                            <constraint firstItem="CF0-SC-stkKeypad" firstAttribute="bottom" secondItem="CF0-SC-btnBuild" secondAttribute="top" constant="-16" id="CF0-SC-c29"/>
+                            <constraint firstItem="CF0-SC-btnBuild" firstAttribute="leading" secondItem="CF0-SC-saf" secondAttribute="leading" constant="20" id="CF0-SC-c30"/>
+                            <constraint firstItem="CF0-SC-btnBuild" firstAttribute="trailing" secondItem="CF0-SC-saf" secondAttribute="trailing" constant="-20" id="CF0-SC-c31"/>
+                            <constraint firstItem="CF0-SC-saf" firstAttribute="bottom" secondItem="CF0-SC-btnBuild" secondAttribute="bottom" constant="20" id="CF0-SC-c32"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="buildTableButton" destination="CF0-SC-btnBuild" id="CF0-SC-obBuild"/>
+                        <outlet property="errorLabel" destination="CF0-SC-lblError" id="CF0-SC-obError"/>
+                        <outlet property="exitButton" destination="CF0-SC-btnExit" id="CF0-SC-obExit"/>
+                        <outlet property="formulaContainerView" destination="CF0-SC-vwFormula" id="CF0-SC-obContainer"/>
+                        <outlet property="formulaLabel" destination="CF0-SC-lblFormula" id="CF0-SC-obFormula"/>
+                        <outlet property="instructionLabel" destination="CF0-SC-lblInst" id="CF0-SC-obInst"/>
+                        <outlet property="titleLabel" destination="CF0-SC-lblTitle" id="CF0-SC-obTitle"/>
+                        <segue destination="6B0-TT-sc1" kind="presentation" identifier="showCustomTruthTable" modalPresentationStyle="fullScreen" id="CF0-SC-sgTruthTable"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="CF0-SC-rsp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-407" y="1130"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="6B0-TT-sgr"/>
+        <segue reference="CF0-SC-sgTruthTable"/>
+        <segue reference="Gox-ak-XzW"/>
     </inferredMetricsTieBreakers>
     <resources>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="placeholderTextColor">
+            <color red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.29803921570000003" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.8980392157" green="0.8980392157" blue="0.91764705879999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGrayColor">
+            <color red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="tintColor">
             <color red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
