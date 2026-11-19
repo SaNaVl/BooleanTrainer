@@ -18,8 +18,68 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="TFz-tB-gLh">
+                                <rect key="frame" x="94" y="646" width="205" height="33"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <segments>
+                                    <segment title="1"/>
+                                    <segment title="2"/>
+                                    <segment title="3"/>
+                                </segments>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fkF-c5-dA0">
+                                <rect key="frame" x="146" y="619" width="101" height="19"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Сложность">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="18" name="Copperplate"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nev-4y-Ei2">
+                                <rect key="frame" x="103" y="283" width="187" height="51"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Теория">
+                                    <fontDescription key="titleFontDescription" name="Copperplate" family="Copperplate" pointSize="24"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="gzd-1D-POp" kind="presentation" identifier="showTheory" modalPresentationStyle="fullScreen" id="UNA-Kr-JwD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E2t-CF-gpV">
+                                <rect key="frame" x="103" y="380" width="187" height="51"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Тренажер">
+                                    <fontDescription key="titleFontDescription" name="Copperplate" family="Copperplate" pointSize="24"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="nmn-1A-l6D" kind="presentation" identifier="showTrainer" modalPresentationStyle="fullScreen" id="l7C-iF-VuJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6B0-TT-btn">
+                                <rect key="frame" x="103" y="474" width="187" height="51"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="  Таблицы истинности" titleAlignment="center">
+                                    <fontDescription key="titleFontDescription" name="Copperplate" family="Copperplate" pointSize="24"/>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="6B0-TT-sc1" kind="presentation" identifier="showTruthTable" modalPresentationStyle="fullScreen" id="6B0-TT-sg1"/>
+                                </connections>
+                            </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="R3h-gS-k2c">
-                                <rect key="frame" x="39.333333333333343" y="119" width="314.33333333333326" height="106.66666666666669"/>
+                                <rect key="frame" x="39.666666666666657" y="121" width="314" height="107"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Учебный">
                                         <attributes>
@@ -92,84 +152,47 @@
                                 </attributedString>
                                 <color key="highlightedColor" systemColor="tintColor"/>
                             </label>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="TFz-tB-gLh">
-                                <rect key="frame" x="94" y="646" width="205" height="32"/>
-                                <color key="backgroundColor" name="AccentColor"/>
-                                <segments>
-                                    <segment title="1"/>
-                                    <segment title="2"/>
-                                    <segment title="3"/>
-                                </segments>
-                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </segmentedControl>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fkF-c5-dA0">
-                                <rect key="frame" x="146" y="619" width="101" height="19"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="Сложность">
-                                        <attributes>
-                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                            <font key="NSFont" size="18" name="Copperplate"/>
-                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nev-4y-Ei2">
-                                <rect key="frame" x="103" y="343" width="187" height="51"/>
-                                <color key="backgroundColor" name="AccentColor"/>
-                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Теория">
-                                    <fontDescription key="titleFontDescription" name="Copperplate" family="Copperplate" pointSize="36"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <segue destination="gzd-1D-POp" kind="presentation" identifier="showTheory" modalPresentationStyle="fullScreen" id="UNA-Kr-JwD"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E2t-CF-gpV">
-                                <rect key="frame" x="102.99999999999999" y="462" width="177.66666666666663" height="50"/>
-                                <color key="backgroundColor" name="AccentColor"/>
-                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Начать">
-                                    <fontDescription key="titleFontDescription" name="Copperplate" family="Copperplate" pointSize="36"/>
-                                </buttonConfiguration>
-                                <connections>
-                                    <segue destination="nmn-1A-l6D" kind="presentation" identifier="showTrainer" modalPresentationStyle="fullScreen" id="l7C-iF-VuJ"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="R3h-gS-k2c" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.8" id="2UE-h0-Q1Z"/>
-                            <constraint firstItem="R3h-gS-k2c" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="3g4-LS-Fmw"/>
-                            <constraint firstItem="TFz-tB-gLh" firstAttribute="top" secondItem="fkF-c5-dA0" secondAttribute="bottom" constant="8" id="93N-1o-GVr"/>
-                            <constraint firstItem="E2t-CF-gpV" firstAttribute="top" secondItem="nev-4y-Ei2" secondAttribute="bottom" constant="68" id="D8P-D5-8LZ"/>
-                            <constraint firstItem="R3h-gS-k2c" firstAttribute="centerX" secondItem="fkF-c5-dA0" secondAttribute="centerX" id="DBd-Ic-JFq"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="TFz-tB-gLh" secondAttribute="bottom" constant="141" id="HIR-iS-lhV"/>
-                            <constraint firstItem="R3h-gS-k2c" firstAttribute="centerX" secondItem="E2t-CF-gpV" secondAttribute="centerX" constant="4.6666666666666572" id="NaS-Kk-zFb"/>
-                            <constraint firstItem="TFz-tB-gLh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="94" id="ShQ-2a-kyw"/>
-                            <constraint firstItem="R3h-gS-k2c" firstAttribute="centerX" secondItem="nev-4y-Ei2" secondAttribute="centerX" id="TOs-TI-vCJ"/>
-                            <constraint firstAttribute="bottom" secondItem="E2t-CF-gpV" secondAttribute="bottom" constant="340" id="bZ5-hZ-Oht"/>
-                            <constraint firstItem="E2t-CF-gpV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="103" id="jFy-QG-WlZ"/>
-                            <constraint firstItem="R3h-gS-k2c" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="60" id="jy8-F3-vjF"/>
-                            <constraint firstItem="R3h-gS-k2c" firstAttribute="centerX" secondItem="TFz-tB-gLh" secondAttribute="centerX" id="kgI-YD-3nd"/>
-                            <constraint firstItem="E2t-CF-gpV" firstAttribute="leading" secondItem="nev-4y-Ei2" secondAttribute="leading" id="pzJ-qP-6ml"/>
-                            <constraint firstItem="R3h-gS-k2c" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.09" constant="29.920000000000002" id="wzx-NZ-MCd"/>
+                            <constraint firstItem="R3h-gS-k2c" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="62" id="VC-c01"/>
+                            <constraint firstItem="R3h-gS-k2c" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VC-c02"/>
+                            <constraint firstItem="R3h-gS-k2c" firstAttribute="width" constant="314" id="VC-c03"/>
+                            <constraint firstItem="R3h-gS-k2c" firstAttribute="height" constant="107" id="VC-c04"/>
+                            <constraint firstItem="nev-4y-Ei2" firstAttribute="top" secondItem="R3h-gS-k2c" secondAttribute="bottom" constant="55" id="VC-c05"/>
+                            <constraint firstItem="nev-4y-Ei2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VC-c06"/>
+                            <constraint firstItem="nev-4y-Ei2" firstAttribute="width" constant="187" id="VC-c07"/>
+                            <constraint firstItem="nev-4y-Ei2" firstAttribute="height" constant="51" id="VC-c08"/>
+                            <constraint firstItem="E2t-CF-gpV" firstAttribute="top" secondItem="nev-4y-Ei2" secondAttribute="bottom" constant="46" id="VC-c09"/>
+                            <constraint firstItem="E2t-CF-gpV" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VC-c10"/>
+                            <constraint firstItem="E2t-CF-gpV" firstAttribute="width" constant="187" id="VC-c11"/>
+                            <constraint firstItem="E2t-CF-gpV" firstAttribute="height" constant="51" id="VC-c12"/>
+                            <constraint firstItem="6B0-TT-btn" firstAttribute="top" secondItem="E2t-CF-gpV" secondAttribute="bottom" constant="43" id="VC-c13"/>
+                            <constraint firstItem="6B0-TT-btn" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VC-c14"/>
+                            <constraint firstItem="6B0-TT-btn" firstAttribute="width" constant="187" id="VC-c15"/>
+                            <constraint firstItem="6B0-TT-btn" firstAttribute="height" constant="51" id="VC-c16"/>
+                            <constraint firstItem="fkF-c5-dA0" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VC-c17"/>
+                            <constraint firstItem="fkF-c5-dA0" firstAttribute="bottom" secondItem="TFz-tB-gLh" secondAttribute="top" constant="-8" id="VC-c18"/>
+                            <constraint firstItem="fkF-c5-dA0" firstAttribute="width" constant="101" id="VC-c19"/>
+                            <constraint firstItem="fkF-c5-dA0" firstAttribute="height" constant="19" id="VC-c20"/>
+                            <constraint firstItem="TFz-tB-gLh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VC-c21"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="TFz-tB-gLh" secondAttribute="bottom" constant="140" id="VC-c22"/>
+                            <constraint firstItem="TFz-tB-gLh" firstAttribute="width" constant="205" id="VC-c23"/>
+                            <constraint firstItem="TFz-tB-gLh" firstAttribute="height" constant="32" id="VC-c24"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="difficultySegmentedControl" destination="TFz-tB-gLh" id="1tN-kZ-jPR"/>
                         <outlet property="startButton" destination="E2t-CF-gpV" id="FfC-lH-Ne2"/>
                         <outlet property="theoryButton" destination="nev-4y-Ei2" id="wIZ-hR-imT"/>
+                        <outlet property="truthTableButton" destination="6B0-TT-btn" id="6B0-TT-out"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-459" y="-5"/>
+            <point key="canvasLocation" x="-460.30534351145036" y="319.71830985915494"/>
         </scene>
         <!--Theory View Controller-->
         <scene sceneID="oaI-Cg-14e">
@@ -451,7 +474,7 @@
                                     <action selector="exitButtonTapped:" destination="oGI-5j-0TN" eventType="touchUpInside" id="OX6-dU-PBN"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="счет" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cVJ-8g-HXC">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="счет" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" adjustsFontSizeToFit="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cVJ-8g-HXC">
                                 <rect key="frame" x="47" y="124" width="299" height="37"/>
                                 <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="36"/>
                                 <nil key="textColor"/>
@@ -484,9 +507,204 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="udY-kf-gO8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1590" y="339"/>
+            <point key="canvasLocation" x="804" y="1067"/>
+        </scene>
+        <!--Truth Table View Controller-->
+        <scene sceneID="6B0-TT-sc0">
+            <objects>
+                <viewController storyboardIdentifier="TruthTableViewController" id="6B0-TT-sc1" customClass="TruthTableViewController" customModule="Bool" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6B0-TT-vw1">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6B0-TT-lbt">
+                                <rect key="frame" x="20" y="32" width="353" height="25"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Таблица истинности">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="24" name="Copperplate"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6B0-TT-lbc">
+                                <rect key="frame" x="20" y="63" width="353" height="19"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Таблица 1 из 3">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="18" name="Copperplate"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6B0-TT-lbd">
+                                <rect key="frame" x="20" y="88" width="353" height="19"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="Сложность: Средний">
+                                        <attributes>
+                                            <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="18" name="Copperplate"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6B0-TT-lbe">
+                                <rect key="frame" x="20" y="117" width="353" height="40"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="F = ¬(A ∧ B)">
+                                        <attributes>
+                                            <color key="NSColor" name="AccentColor"/>
+                                            <font key="NSFont" size="20" name="Copperplate"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Заполните столбец F для всех наборов:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6B0-TT-lbi">
+                                <rect key="frame" x="20" y="165" width="353" height="17"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="6B0-TT-tbv">
+                                <rect key="frame" x="20" y="190" width="353" height="482"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6B0-TT-bta">
+                                <rect key="frame" x="110" y="688" width="173" height="36"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Ответить">
+                                            <attributes>
+                                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="18" name="Copperplate"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="actionButtonTapped:" destination="6B0-TT-sc1" eventType="touchUpInside" id="6B0-TT-ac1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6B0-TT-btf">
+                                <rect key="frame" x="110" y="732" width="173" height="36"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Завершить">
+                                            <attributes>
+                                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="18" name="Copperplate"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="finishButtonTapped:" destination="6B0-TT-sc1" eventType="touchUpInside" id="6B0-TT-ac2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6B0-TT-bte">
+                                <rect key="frame" x="110" y="776" width="173" height="36"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Выйти">
+                                            <attributes>
+                                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="18" name="Copperplate"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="exitButtonTapped:" destination="6B0-TT-sc1" eventType="touchUpInside" id="6B0-TT-ac3"/>
+                                    <segue destination="oGI-5j-0TN" kind="presentation" identifier="showResult" modalPresentationStyle="fullScreen" id="6B0-TT-sgr"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6B0-TT-saf"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6B0-TT-lbt" firstAttribute="top" secondItem="6B0-TT-saf" secondAttribute="top" constant="32" id="TT-c01"/>
+                            <constraint firstItem="6B0-TT-saf" firstAttribute="trailing" secondItem="6B0-TT-lbt" secondAttribute="trailing" constant="20" id="TT-c02"/>
+                            <constraint firstItem="6B0-TT-lbt" firstAttribute="leading" secondItem="6B0-TT-saf" secondAttribute="leading" constant="20" id="TT-c03"/>
+                            <constraint firstItem="6B0-TT-lbt" firstAttribute="height" constant="25" id="TT-c04"/>
+                            <constraint firstItem="6B0-TT-lbc" firstAttribute="top" secondItem="6B0-TT-lbt" secondAttribute="bottom" constant="6" id="TT-c05"/>
+                            <constraint firstItem="6B0-TT-saf" firstAttribute="trailing" secondItem="6B0-TT-lbc" secondAttribute="trailing" constant="20" id="TT-c06"/>
+                            <constraint firstItem="6B0-TT-lbc" firstAttribute="leading" secondItem="6B0-TT-saf" secondAttribute="leading" constant="20" id="TT-c07"/>
+                            <constraint firstItem="6B0-TT-lbc" firstAttribute="height" constant="19" id="TT-c08"/>
+                            <constraint firstItem="6B0-TT-lbd" firstAttribute="top" secondItem="6B0-TT-lbc" secondAttribute="bottom" constant="6" id="TT-c09"/>
+                            <constraint firstItem="6B0-TT-saf" firstAttribute="trailing" secondItem="6B0-TT-lbd" secondAttribute="trailing" constant="20" id="TT-c10"/>
+                            <constraint firstItem="6B0-TT-lbd" firstAttribute="leading" secondItem="6B0-TT-saf" secondAttribute="leading" constant="20" id="TT-c11"/>
+                            <constraint firstItem="6B0-TT-lbd" firstAttribute="height" constant="19" id="TT-c12"/>
+                            <constraint firstItem="6B0-TT-lbe" firstAttribute="top" secondItem="6B0-TT-lbd" secondAttribute="bottom" constant="10" id="TT-c13"/>
+                            <constraint firstItem="6B0-TT-saf" firstAttribute="trailing" secondItem="6B0-TT-lbe" secondAttribute="trailing" constant="20" id="TT-c14"/>
+                            <constraint firstItem="6B0-TT-lbe" firstAttribute="leading" secondItem="6B0-TT-saf" secondAttribute="leading" constant="20" id="TT-c15"/>
+                            <constraint firstItem="6B0-TT-lbe" firstAttribute="height" constant="40" id="TT-c16"/>
+                            <constraint firstItem="6B0-TT-lbi" firstAttribute="top" secondItem="6B0-TT-lbe" secondAttribute="bottom" constant="8" id="TT-c17"/>
+                            <constraint firstItem="6B0-TT-saf" firstAttribute="trailing" secondItem="6B0-TT-lbi" secondAttribute="trailing" constant="20" id="TT-c18"/>
+                            <constraint firstItem="6B0-TT-lbi" firstAttribute="leading" secondItem="6B0-TT-saf" secondAttribute="leading" constant="20" id="TT-c19"/>
+                            <constraint firstItem="6B0-TT-lbi" firstAttribute="height" constant="17" id="TT-c20"/>
+                            <constraint firstItem="6B0-TT-tbv" firstAttribute="top" secondItem="6B0-TT-lbi" secondAttribute="bottom" constant="8" id="TT-c21"/>
+                            <constraint firstItem="6B0-TT-saf" firstAttribute="trailing" secondItem="6B0-TT-tbv" secondAttribute="trailing" constant="20" id="TT-c22"/>
+                            <constraint firstItem="6B0-TT-tbv" firstAttribute="leading" secondItem="6B0-TT-saf" secondAttribute="leading" constant="20" id="TT-c23"/>
+                            <constraint firstItem="6B0-TT-tbv" firstAttribute="bottom" secondItem="6B0-TT-bta" secondAttribute="top" constant="-16" id="TT-c24"/>
+                            <constraint firstItem="6B0-TT-bta" firstAttribute="centerX" secondItem="6B0-TT-vw1" secondAttribute="centerX" id="TT-c25"/>
+                            <constraint firstItem="6B0-TT-bta" firstAttribute="width" constant="173" id="TT-c26"/>
+                            <constraint firstItem="6B0-TT-bta" firstAttribute="height" constant="36" id="TT-c27"/>
+                            <constraint firstItem="6B0-TT-btf" firstAttribute="top" secondItem="6B0-TT-bta" secondAttribute="bottom" constant="8" id="TT-c28"/>
+                            <constraint firstItem="6B0-TT-btf" firstAttribute="centerX" secondItem="6B0-TT-vw1" secondAttribute="centerX" id="TT-c29"/>
+                            <constraint firstItem="6B0-TT-btf" firstAttribute="width" constant="173" id="TT-c30"/>
+                            <constraint firstItem="6B0-TT-btf" firstAttribute="height" constant="36" id="TT-c31"/>
+                            <constraint firstItem="6B0-TT-bte" firstAttribute="top" secondItem="6B0-TT-btf" secondAttribute="bottom" constant="8" id="TT-c32"/>
+                            <constraint firstItem="6B0-TT-bte" firstAttribute="centerX" secondItem="6B0-TT-vw1" secondAttribute="centerX" id="TT-c33"/>
+                            <constraint firstItem="6B0-TT-bte" firstAttribute="width" constant="173" id="TT-c34"/>
+                            <constraint firstItem="6B0-TT-bte" firstAttribute="height" constant="36" id="TT-c35"/>
+                            <constraint firstItem="6B0-TT-saf" firstAttribute="bottom" secondItem="6B0-TT-bte" secondAttribute="bottom" constant="40" id="TT-c36"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="actionButton" destination="6B0-TT-bta" id="6B0-TT-ob1"/>
+                        <outlet property="counterLabel" destination="6B0-TT-lbc" id="6B0-TT-ob2"/>
+                        <outlet property="difficultyLabel" destination="6B0-TT-lbd" id="6B0-TT-ob3"/>
+                        <outlet property="exitButton" destination="6B0-TT-bte" id="6B0-TT-ob4"/>
+                        <outlet property="expressionFormulaLabel" destination="6B0-TT-lbe" id="6B0-TT-ob5"/>
+                        <outlet property="finishButton" destination="6B0-TT-btf" id="6B0-TT-ob6"/>
+                        <outlet property="instructionLabel" destination="6B0-TT-lbi" id="6B0-TT-ob7"/>
+                        <outlet property="tableView" destination="6B0-TT-tbv" id="6B0-TT-ob8"/>
+                        <outlet property="titleLabel" destination="6B0-TT-lbt" id="6B0-TT-ob9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6B0-TT-rsp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-460.30534351145036" y="1066.9014084507044"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="6B0-TT-sgr"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <namedColor name="AccentColor">
             <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

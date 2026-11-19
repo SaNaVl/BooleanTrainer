@@ -23,7 +23,7 @@ class ExpressionGenerator {
             variableCount = 2
             maxDepth = 2
             allowParentheses = false
-            operations = [.and, .or, .not]
+            operations = [.and, .or, .not, .nand, .nor, .xor, .implies, .equivalent]
         case .medium:
             variableCount = 2
             maxDepth = 3
@@ -58,7 +58,7 @@ class ExpressionGenerator {
             )
             attempts += 1
         } while shouldRegenerate(tree: tree, difficulty: difficulty)
-                && attempts < 30
+                && attempts < 100
         
         let expression = tree.toString()
         let result = tree.evaluate(with: truthValues)
@@ -82,11 +82,26 @@ class ExpressionGenerator {
         if containsDoubleNegation(tree) { return true }
         if isTrivialRoot(tree) { return true }
         
-        let usedVars = Set(tree.collectVariables())
+        let allVars = tree.collectVariables()
+        let usedVars = Set(allVars)
         
-        if difficulty == .hard && usedVars.count < 2 { return true }
-        if difficulty == .medium && usedVars.count < 2 { return true }
-        if difficulty == .hard && countBinaryOperations(tree) < 2 { return true }
+        switch difficulty {
+        case .easy:
+            // В легком: ровно 2 вхождения переменных, каждая ровно по 1 разу (например, ¬A → B)
+            if allVars.count != 2 { return true }
+            if usedVars.count != 2 { return true }
+            
+        case .medium:
+            // В среднем: ровно 3 вхождения переменных (например, (A → B) ↔ A)
+            if allVars.count != 3 { return true }
+            if usedVars.count < 2 { return true }
+            
+        case .hard:
+            // В сложном: от 4 до 5 вхождений переменных (например, ¬(A → B) ↔ (A ↑ ¬B))
+            if allVars.count < 4 || allVars.count > 5 { return true }
+            if usedVars.count < 2 { return true }
+            if countBinaryOperations(tree) < 2 { return true }
+        }
         
         return false
     }
@@ -141,11 +156,9 @@ class ExpressionGenerator {
             return .variable(v)
         }
         
-        let isRoot = (depth == 1)
-        
         // Веса зависят от сложности
-        let vWeight = weightForVariable(difficulty: difficulty, isRoot: isRoot)
-        let oWeight = weightForOperation(difficulty: difficulty, isRoot: isRoot)
+        let vWeight = weightForVariable(difficulty: difficulty, depth: depth)
+        let oWeight = weightForOperation(difficulty: difficulty, depth: depth)
         
         // Собираем пул выборов: 0 — переменная, 1 — отрицание, 2 — бинарная операция
         var choices: [Int] = []
@@ -202,26 +215,30 @@ class ExpressionGenerator {
     // MARK: - Веса для разных уровней сложности
     
     private static func weightForVariable(difficulty: Difficulty,
-                                          isRoot: Bool) -> Int {
-        // На корне переменная запрещена — возвращаем 0
-        if isRoot { return 0 }
+                                          depth: Int) -> Int {
+        if depth == 1 { return 0 }
         
         switch difficulty {
-        case .easy:   return 3
-        case .medium: return 2
-        case .hard:   return 1  // редко листья, больше структуры
+        case .easy:
+            return 3
+        case .medium:
+            return (depth == 2) ? 2 : 3
+        case .hard:
+            return (depth == 2) ? 1 : 4
         }
     }
     
     private static func weightForOperation(difficulty: Difficulty,
-                                           isRoot: Bool) -> Int {
-        // На корне всегда операция, даём ей повышенный вес
-        if isRoot { return 10 }
+                                           depth: Int) -> Int {
+        if depth == 1 { return 10 }
         
         switch difficulty {
-        case .easy:   return 1
-        case .medium: return 2
-        case .hard:   return 4  // на hard чаще операции
+        case .easy:
+            return 1
+        case .medium:
+            return (depth == 2) ? 2 : 1
+        case .hard:
+            return (depth == 2) ? 4 : 1
         }
     }
 }

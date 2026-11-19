@@ -1,7 +1,7 @@
 import Foundation
 
 /// Узел дерева логического выражения
-indirect enum ExpressionNode {
+indirect enum ExpressionNode: Equatable {
     case variable(Character)
     case constant(Bool)
     case negation(ExpressionNode)

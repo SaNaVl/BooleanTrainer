@@ -97,6 +97,33 @@ final class ExpressionGeneratorTests: XCTestCase {
         }
     }
     
+    // MARK: - Тесты на количество вхождений переменных
+    
+    func testVariableOccurrencesPerDifficulty() {
+        // Easy: ровно 2 вхождения переменных (каждая по 1 разу)
+        for _ in 0..<30 {
+            let gen = ExpressionGenerator.generateExpression(difficulty: .easy)
+            let allVars = gen.tree.collectVariables()
+            XCTAssertEqual(allVars.count, 2, "На easy должно быть ровно 2 вхождения: \(gen.expression)")
+            XCTAssertEqual(Set(allVars).count, 2, "На easy переменные должны быть разными: \(gen.expression)")
+        }
+        
+        // Medium: ровно 3 вхождения переменных
+        for _ in 0..<30 {
+            let gen = ExpressionGenerator.generateExpression(difficulty: .medium)
+            let allVars = gen.tree.collectVariables()
+            XCTAssertEqual(allVars.count, 3, "На medium должно быть ровно 3 вхождения: \(gen.expression)")
+        }
+        
+        // Hard: от 4 до 5 вхождений переменных
+        for _ in 0..<30 {
+            let gen = ExpressionGenerator.generateExpression(difficulty: .hard)
+            let allVars = gen.tree.collectVariables()
+            XCTAssertTrue(allVars.count >= 4 && allVars.count <= 5,
+                          "На hard должно быть от 4 до 5 вхождений (получено \(allVars.count)): \(gen.expression)")
+        }
+    }
+    
     // MARK: - Производительность
     
     func testGenerationPerformance() {

@@ -21,7 +21,9 @@ class ResultViewController: UIViewController {
     }
     
     private func setupUI() {
-        scoreLabel.text = "Результат: \(score)/\(totalQuestions)"
+        scoreLabel.adjustsFontSizeToFitWidth = true
+        scoreLabel.minimumScaleFactor = 0.5
+        scoreLabel.text = "Результат: \(score) из \(totalQuestions)"
         
         tableView.delegate = self
         tableView.dataSource = self
