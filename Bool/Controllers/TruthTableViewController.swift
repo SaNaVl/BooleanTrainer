@@ -22,6 +22,7 @@ class TruthTableViewController: UIViewController {
     private var tables: [TruthTable] = []
     private var currentTableIndex = 0
     private var isTableChecked = false
+    private var completedTableIndices: Set<Int> = []
     
     private var truthTable: TruthTable? {
         get {
@@ -66,6 +67,7 @@ class TruthTableViewController: UIViewController {
     /// Генерирует все таблицы для текущей сессии с гарантией неповторяющихся выражений
     private func setupSession() {
         tables.removeAll()
+        completedTableIndices.removeAll()
         var usedExpressions: Set<String> = []
         for _ in 0..<totalTablesCount {
             let table = TruthTable.generate(difficulty: selectedDifficulty, excluding: usedExpressions)
@@ -107,6 +109,9 @@ class TruthTableViewController: UIViewController {
     }
     
     @IBAction func finishButtonTapped(_ sender: UIButton) {
+        if !isTableChecked && (truthTable?.rows.contains(where: { $0.isFilled }) == true) {
+            checkCurrentTable()
+        }
         showResults()
     }
     
@@ -119,6 +124,7 @@ class TruthTableViewController: UIViewController {
     private func checkCurrentTable() {
         guard let table = truthTable else { return }
         isTableChecked = true
+        completedTableIndices.insert(currentTableIndex)
         tableView.reloadData()
         
         let correct = table.correctRowCount
@@ -143,10 +149,16 @@ class TruthTableViewController: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showResult" {
             if let resultVC = segue.destination as? ResultViewController {
-                let allAnswers = tables.flatMap { $0.toUserAnswers() }
-                resultVC.score = allAnswers.filter { $0.isCorrect }.count
-                resultVC.totalQuestions = allAnswers.count
-                resultVC.userAnswers = allAnswers
+                let completedTables = completedTableIndices.sorted().compactMap { index -> TruthTable? in
+                    guard tables.indices.contains(index) else { return nil }
+                    return tables[index]
+                }
+                let displayedAnswers = completedTables.flatMap { $0.toUserAnswers() }
+                let totalSessionQuestions = tables.reduce(0) { $0 + $1.totalRowCount }
+                
+                resultVC.score = displayedAnswers.filter { $0.isCorrect }.count
+                resultVC.totalQuestions = totalSessionQuestions
+                resultVC.userAnswers = displayedAnswers
             }
         }
     }

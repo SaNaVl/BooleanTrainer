@@ -197,18 +197,57 @@ final class TruthTableTests: XCTestCase {
         }
         
         let node2 = ExpressionNode.binary(.or, .variable("A"), .variable("B"))
-        let table2 = TruthTable(expression: node2, expressionString: "A ∨ B", variables: ["A", "B"])
-        // Не решали table2
+        var table2 = TruthTable(expression: node2, expressionString: "A ∨ B", variables: ["A", "B"])
+        for i in 0..<4 {
+            table2.setUserOutput(table2.rows[i].expectedOutput, forRowAt: i)
+        }
         
         let node3 = ExpressionNode.binary(.xor, .variable("A"), .variable("B"))
-        let table3 = TruthTable(expression: node3, expressionString: "A ⊕ B", variables: ["A", "B"])
-        // Не решали table3
+        var table3 = TruthTable(expression: node3, expressionString: "A ⊕ B", variables: ["A", "B"])
+        for i in 0..<4 {
+            table3.setUserOutput(table3.rows[i].expectedOutput, forRowAt: i)
+        }
         
         let allTables = [table1, table2, table3]
         let allAnswers = allTables.flatMap { $0.toUserAnswers() }
+        let totalQuestions = allTables.reduce(0) { $0 + $1.totalRowCount }
         
         XCTAssertEqual(allAnswers.count, 12, "Всего вопросов должно быть 12")
+        XCTAssertEqual(totalQuestions, 12, "Всего вопросов в сессии должно быть 12")
         let correctCount = allAnswers.filter { $0.isCorrect }.count
-        XCTAssertEqual(correctCount, 4, "Правильно решено 4 из 12")
+        XCTAssertEqual(correctCount, 12, "Все решено правильно")
+    }
+    
+    func testEarlyFinishShowsOnlyCompletedTablesAnswersWithTotalSessionQuestions() {
+        // Симулируем сессию: 3 таблицы по 4 строки = 12 вопросов
+        let node1 = ExpressionNode.binary(.and, .variable("A"), .variable("B"))
+        var table1 = TruthTable(expression: node1, expressionString: "A ∧ B", variables: ["A", "B"])
+        for i in 0..<4 {
+            table1.setUserOutput(table1.rows[i].expectedOutput, forRowAt: i)
+        }
+        
+        let node2 = ExpressionNode.binary(.or, .variable("A"), .variable("B"))
+        let table2 = TruthTable(expression: node2, expressionString: "A ∨ B", variables: ["A", "B"])
+        // table2 не открывалась/не решалась
+        
+        let node3 = ExpressionNode.binary(.xor, .variable("A"), .variable("B"))
+        let table3 = TruthTable(expression: node3, expressionString: "A ⊕ B", variables: ["A", "B"])
+        // table3 не открывалась/не решалась
+        
+        let allTables = [table1, table2, table3]
+        let completedTableIndices = [0]
+        
+        let completedTables = completedTableIndices.sorted().compactMap { index -> TruthTable? in
+            guard allTables.indices.contains(index) else { return nil }
+            return allTables[index]
+        }
+        let displayedAnswers = completedTables.flatMap { $0.toUserAnswers() }
+        let totalSessionQuestions = allTables.reduce(0) { $0 + $1.totalRowCount }
+        let score = displayedAnswers.filter { $0.isCorrect }.count
+        
+        // В списке результатов должны быть только строки открытой таблицы (4), а не 12
+        XCTAssertEqual(displayedAnswers.count, 4, "Только решенная таблица попадает в список результатов")
+        XCTAssertEqual(score, 4, "Счет пользователя 4")
+        XCTAssertEqual(totalSessionQuestions, 12, "Общий счет сессии 12 (4 из 12)")
     }
 }

@@ -64,17 +64,23 @@ extension ResultViewController: UITableViewDelegate, UITableViewDataSource {
         tableView.deselectRow(at: indexPath, animated: true)
         let answer = userAnswers[indexPath.row]
         
-        let message = """
+        var message = """
         Ваш ответ: \(answer.userAnswerText)
         Правильный ответ: \(answer.correctAnswerText)
         """
         
+        if let explanation = answer.explanation, !explanation.isEmpty {
+            message += "\n\n📖 Разбор решения:\n\(explanation)"
+        }
+        
+        let title = answer.isCorrect ? "✅ Правильно" : "❌ Ошибка в задании"
+        
         let alert = UIAlertController(
-            title: answer.isCorrect ? "Правильно" : "Неправильно",
+            title: title,
             message: message,
             preferredStyle: .alert
         )
-        alert.addAction(UIAlertAction(title: "OK", style: .default))
+        alert.addAction(UIAlertAction(title: "Понятно", style: .default))
         present(alert, animated: true)
     }
 }

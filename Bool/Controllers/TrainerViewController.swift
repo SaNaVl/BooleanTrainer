@@ -94,7 +94,8 @@ class TrainerViewController: UIViewController {
             questionText: currentQ.text,
             userAnswerText: currentQ.options[selectedIndex],
             correctAnswerText: currentQ.options[currentQ.correctAnswerIndex],
-            isCorrect: isCorrect
+            isCorrect: isCorrect,
+            explanation: currentQ.explanation
         )
         userAnswers.append(userAnswer)
     }

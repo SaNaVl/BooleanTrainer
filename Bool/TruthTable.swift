@@ -151,11 +151,14 @@ struct TruthTable: Equatable {
             let correctStr = row.expectedOutput ? "1" : "0"
             let questionText = "[\(inputsStr)] для F = \(expressionString)"
             
+            let trace = expression.evaluateWithTrace(with: row.inputs)
+            
             return UserAnswer(
                 questionText: questionText,
                 userAnswerText: userStr,
                 correctAnswerText: correctStr,
-                isCorrect: row.isCorrect
+                isCorrect: row.isCorrect,
+                explanation: trace.formattedExplanation
             )
         }
     }

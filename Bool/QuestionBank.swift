@@ -89,7 +89,8 @@ class QuestionBank {
                 difficulty: difficulty,
                 text: theoretical.text,
                 options: theoretical.options,
-                correctAnswerIndex: theoretical.correctAnswerIndex
+                correctAnswerIndex: theoretical.correctAnswerIndex,
+                explanation: theoretical.explanation
             )
         }
     }
@@ -103,12 +104,15 @@ class QuestionBank {
             questionText += "\(variable) = \(value ? "1" : "0")\n"
         }
 
+        let trace = gen.tree.evaluateWithTrace(with: gen.truthValues)
+
         return Question(
             type: .compute,
             difficulty: difficulty,
             text: questionText,
             options: ["1", "0"],
-            correctAnswerIndex: gen.result ? 0 : 1
+            correctAnswerIndex: gen.result ? 0 : 1,
+            explanation: trace.formattedExplanation
         )
     }
 }

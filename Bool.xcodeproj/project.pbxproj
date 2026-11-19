@@ -8,14 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		6B0FC82E307E604000A3C030 /* ExpressionNode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0FC82D307E604000A3C030 /* ExpressionNode.swift */; };
+		6B0FC832307E604000A3C030 /* TruthTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0FC831307E604000A3C030 /* TruthTable.swift */; };
+		6B0FC834307E604000A3C030 /* TruthTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0FC833307E604000A3C030 /* TruthTableViewController.swift */; };
 		6B354E74308A392900EFDFBF /* ExpressionNodeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B354E73308A392900EFDFBF /* ExpressionNodeTests.swift */; };
 		6B354E76308A396100EFDFBF /* ExpressionGeneratorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B354E75308A396100EFDFBF /* ExpressionGeneratorTests.swift */; };
 		6B354E78308A397D00EFDFBF /* QuestionBankTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B354E77308A397D00EFDFBF /* QuestionBankTests.swift */; };
-		6B0FC832307E604000A3C030 /* TruthTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0FC831307E604000A3C030 /* TruthTable.swift */; };
 		6B354E7A308A397D00EFDFBF /* TruthTableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B354E79308A397D00EFDFBF /* TruthTableTests.swift */; };
 		6B8EC24B2F7BBD26005721A5 /* UserAnswer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8EC24A2F7BBD26005721A5 /* UserAnswer.swift */; };
 		6B8EC24D2F7BC721005721A5 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8EC24C2F7BC721005721A5 /* ResultViewController.swift */; };
-		6B0FC834307E604000A3C030 /* TruthTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B0FC833307E604000A3C030 /* TruthTableViewController.swift */; };
 		6B8EC24F2F7BFBEB005721A5 /* TheoreticalQuestions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8EC24E2F7BFBEB005721A5 /* TheoreticalQuestions.swift */; };
 		6B8EC2512F7C087D005721A5 /* ExpressionGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8EC2502F7C087D005721A5 /* ExpressionGenerator.swift */; };
 		6B8EC2532F7C0C45005721A5 /* LogicOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B8EC2522F7C0C45005721A5 /* LogicOperation.swift */; };
@@ -43,15 +43,15 @@
 
 /* Begin PBXFileReference section */
 		6B0FC82D307E604000A3C030 /* ExpressionNode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpressionNode.swift; sourceTree = "<group>"; };
+		6B0FC831307E604000A3C030 /* TruthTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TruthTable.swift; sourceTree = "<group>"; };
+		6B0FC833307E604000A3C030 /* TruthTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TruthTableViewController.swift; sourceTree = "<group>"; };
 		6B354E6A308A38FD00EFDFBF /* BoolTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BoolTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6B354E73308A392900EFDFBF /* ExpressionNodeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpressionNodeTests.swift; sourceTree = "<group>"; };
 		6B354E75308A396100EFDFBF /* ExpressionGeneratorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpressionGeneratorTests.swift; sourceTree = "<group>"; };
 		6B354E77308A397D00EFDFBF /* QuestionBankTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionBankTests.swift; sourceTree = "<group>"; };
-		6B0FC831307E604000A3C030 /* TruthTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TruthTable.swift; sourceTree = "<group>"; };
 		6B354E79308A397D00EFDFBF /* TruthTableTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TruthTableTests.swift; sourceTree = "<group>"; };
 		6B8EC24A2F7BBD26005721A5 /* UserAnswer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserAnswer.swift; sourceTree = "<group>"; };
 		6B8EC24C2F7BC721005721A5 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
-		6B0FC833307E604000A3C030 /* TruthTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TruthTableViewController.swift; sourceTree = "<group>"; };
 		6B8EC24E2F7BFBEB005721A5 /* TheoreticalQuestions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheoreticalQuestions.swift; sourceTree = "<group>"; };
 		6B8EC2502F7C087D005721A5 /* ExpressionGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpressionGenerator.swift; sourceTree = "<group>"; };
 		6B8EC2522F7C0C45005721A5 /* LogicOperation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogicOperation.swift; sourceTree = "<group>"; };
@@ -131,11 +131,11 @@
 		6B8F43F82F47036900EC8B3B /* Bool */ = {
 			isa = PBXGroup;
 			children = (
-				6B8F44022F47036C00EC8B3B /* Assets.xcassets */,
 				6B8F43F92F47036900EC8B3B /* AppDelegate.swift */,
 				6B8F43FB2F47036900EC8B3B /* SceneDelegate.swift */,
 				6B8F44042F47036C00EC8B3B /* LaunchScreen.storyboard */,
 				6B8F44072F47036C00EC8B3B /* Info.plist */,
+				6B8F44022F47036C00EC8B3B /* Assets.xcassets */,
 				6B354E5E308A37C000EFDFBF /* Controllers */,
 				6B8F43FF2F47036900EC8B3B /* Main.storyboard */,
 				6BFE06132F4DC17600A18247 /* QuestionBank.swift */,

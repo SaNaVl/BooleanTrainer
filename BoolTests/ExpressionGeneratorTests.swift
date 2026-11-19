@@ -124,6 +124,39 @@ final class ExpressionGeneratorTests: XCTestCase {
         }
     }
     
+    // MARK: - Пошаговая трассировка (разбор ошибок)
+    
+    func testEvaluateWithTraceMatchesDirectEvaluation() {
+        for difficulty in [Difficulty.easy, .medium, .hard] {
+            for _ in 0..<30 {
+                let gen = ExpressionGenerator.generateExpression(difficulty: difficulty)
+                let trace = gen.tree.evaluateWithTrace(with: gen.truthValues)
+                
+                // Итоговый результат трассировки должен в точности совпадать с прямым вычислением
+                XCTAssertEqual(trace.finalResult, gen.result,
+                               "Результат трассировки не совпал с эталоном: \(gen.expression)")
+                XCTAssertFalse(trace.steps.isEmpty, "Шаги трассировки не должны быть пустыми")
+                XCTAssertFalse(trace.formattedExplanation.isEmpty)
+            }
+        }
+    }
+    
+    func testDeterministicTraceSteps() {
+        // (A ∧ B) ∨ ¬A при A = 0, B = 1
+        let left = ExpressionNode.binary(.and, .variable("A"), .variable("B"))
+        let right = ExpressionNode.negation(.variable("A"))
+        let tree = ExpressionNode.binary(.or, left, right)
+        
+        let trace = tree.evaluateWithTrace(with: ["A": false, "B": true])
+        
+        // 0 ∧ 1 = 0; ¬0 = 1; 0 ∨ 1 = 1
+        XCTAssertTrue(trace.finalResult)
+        XCTAssertEqual(trace.steps.count, 3)
+        XCTAssertTrue(trace.steps[0].contains("A ∧ B"))
+        XCTAssertTrue(trace.steps[1].contains("¬A"))
+        XCTAssertTrue(trace.steps[2].contains("∨"))
+    }
+    
     // MARK: - Производительность
     
     func testGenerationPerformance() {
